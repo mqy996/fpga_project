@@ -880,7 +880,7 @@
       "path": "qt/readme.md",
       "source": "co_project\\Final_pro\\QtControlHost_v6\\README.md",
       "source_sha256": "1f6bd4b632f70f2b94ca8bd2760889345d591a5d1ad2cc4ff2f4fce10d31aaaa",
-      "release_sha256": "25945f4a80d84fb9e743b4ae0cadf4c32c979c1cf2590ce5d63e60370837d32f",
+      "release_sha256": "fd53683f231db5dcf48db92ef6a517af7295a8bbf71e128b68591ef1fece89b1",
       "modified_for_release": true
     },
     {
@@ -943,7 +943,7 @@
       "path": "skill/readme.md",
       "source": "results\\task009\\submission_20261029\\skill\\readme.md",
       "source_sha256": "4fce85b786478e553257c5a845d23fbc3d545c592def5ab49e17ea37b71aa318",
-      "release_sha256": "55467f1577450aeb2fcadc68ee33afb660d4e7d4581d9c70871efe0bf1714a12",
+      "release_sha256": "4dfa5aab5f70244b24d2b9c67b2cd6b6c69d2405eaa2c1276f67c63d963cb296",
       "modified_for_release": true
     },
     {

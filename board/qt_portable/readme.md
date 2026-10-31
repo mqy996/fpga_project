@@ -1,5 +1,5 @@
-# 最终上位机
+# 最终 TXT 版上位机
 
-qtcontrolhost_v6.exe是用户指定QtControlHost_v6_txt目录中的最终EXE，原始字节未修改。完整本地代码包包含原目录动态库和插件，Windows文件名大小写不影响加载。
+`qtcontrolhost_v6.exe` 是团队最终使用的 TXT 版上位机，文件内容与原发布目录中的 EXE 完全一致。
 
-GitHub源码仓库不分发Qt/MinGW/Windows第三方DLL。克隆仓库后运行build/build_qt.ps1和build/deploy_qt.ps1，或从Qt6.8.3安装目录对EXE执行windeployqt。请将动态库及plugins目录与EXE整体部署。详细使用方式见qt/readme.md。
+完整代码压缩包同时包含原发布目录中的 DLL 和插件。解压后请保留目录结构，直接运行该 EXE。GitHub 仓库提供自有 EXE 和源码；从仓库获取时，可执行 `build/build_qt.ps1` 和 `build/deploy_qt.ps1` 构建并部署运行库，也可使用 Qt 6.8.3 的 `windeployqt` 部署。功能和操作步骤见 `qt/readme.md`。

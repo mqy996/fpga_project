@@ -32,7 +32,7 @@ Vivado 2025.1 自带 XPM FIFO、Xilinx 器件原语和仿真器，无需额外 R
 
 ## 打开和校验工程
 
-在解压后的 `minimal_fpga_project` 目录执行：
+在解压后的 `fpga/` 目录执行：
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\validate_project.ps1
@@ -96,7 +96,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\program_qspi.ps1 -ImagePath .
 
 ## 失败恢复
 
-1. 工程打开/校验失败：从包根目录运行 `create_project.ps1`，再运行 `validate_project.ps1`；若仍失败，查看 `vivado_project\validate_project.log` 和 `.jou`。
+1. 工程打开/校验失败：从 `fpga/` 目录运行 `scripts/create_project.ps1`，再运行 `scripts/validate_project.ps1`；若仍失败，查看 `vivado_project\validate_project.log` 和 `.jou`。
 2. 综合或实现失败：保留本次 `output\<时间戳>`，查看其中的 `vivado.log`、`vivado.jou` 和已生成报告；修正源文件/约束后使用新的输出目录重跑，避免覆盖失败现场。
 3. 时序或 DRC 门槛未通过：脚本会在生成最终 bitstream 前报错；根据输出报告修复后重新构建。
 4. QSPI 写入失败：检查 JTAG 目标、板卡供电和 Vivado Hardware Manager 连接，再用已知有效 BIN 重试；脚本的地址保护和上界检查应保持开启，不要改为全片擦除。

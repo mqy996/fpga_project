@@ -1,7 +1,7 @@
-# 第三方组件
+# 第三方组件说明
 
-本仓库MIT仅适用于项目自有源代码、文档和脚本。Vivado/XPM/7系列原语需使用AMD工具安装；本工程没有另行复制的XCI/BD第三方IP源文件。
+本项目的 MIT 许可适用于我们提供的自有源代码、文档和脚本。Vivado、XPM 和 7 系列器件原语由 AMD 工具安装提供；工程未另行复制 XCI 或 BD 第三方 IP 源文件。
 
-Qt6.8.3 Core/Gui/Widgets/Network/Svg是动态依赖；本地完整包中的运行库按原发布目录复制，原始字节不改。GitHub源码仓库不分发这些第三方DLL；需要运行程序时，使用自行合法安装的Qt及windeployqt构建部署。Qt源代码与许可证见https://download.qt.io/archive/qt/6.8/6.8.3/ 和 https://www.qt.io/licensing/ 。MinGW运行库、D3Dcompiler_47与opengl32sw仍分别遵循其上游条款，不能套用项目MIT。
+上位机动态依赖 Qt 6.8.3 的 Core、Gui、Widgets、Network 和 Svg 等组件。完整本地代码包保留原发布目录中的运行库和插件，文件内容未修改；GitHub 仓库提供项目源码和自有 EXE，运行库可通过 Qt 安装及 `windeployqt` 部署。
 
-完整本地包附Qt6.8.3现有SBOM与MinGW原始许可用于识别依赖。它们的来源与许可记录不构成把第三方运行库改为MIT许可。
+完整本地包附有 Qt 6.8.3 的 SBOM 与 MinGW 相关原始许可，便于识别依赖。Qt 源码和许可信息见 [Qt 6.8.3 源码归档](https://download.qt.io/archive/qt/6.8/6.8.3/) 和 [Qt 许可说明](https://www.qt.io/licensing/)。Qt、MinGW、D3Dcompiler_47 和 opengl32sw 各自遵循上游许可，项目 MIT 许可不改变其许可条件。

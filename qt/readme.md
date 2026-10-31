@@ -1,6 +1,6 @@
 # 采集卡控制上位机 V6
 
-这是与 `ADC_transmission_flash_param_rate_project` 配套的 Qt 6.8.3 Windows 上位机。它不修改 FPGA 协议和 Flash 分区，而是直接使用 FPGA 已实现的控制 UDP 56556 与数据 UDP 端口。
+我们基于 Qt 6.8.3 开发了 Windows 上位机，配套 FPGA 采集工程使用。上位机通过已实现的控制 UDP 56556 端口和数据 UDP 端口完成配置、接收与显示。
 
 ## 功能
 
