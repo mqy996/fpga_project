@@ -1,0 +1,1457 @@
+{
+  "prepared_date": "2026-10-31",
+  "files": [
+    {
+      "path": "fpga/bitstream/fpga_adc_udp_flash_param_rate.bin",
+      "source": "results\\task005\\minimal_fpga_project\\bitstream\\fpga_adc_udp_flash_param_rate.bin",
+      "source_sha256": "a236fd5fd5810ea9c91df48887a6dfaa13f5e3a07b9068dcc0be96ac1e086863",
+      "release_sha256": "a236fd5fd5810ea9c91df48887a6dfaa13f5e3a07b9068dcc0be96ac1e086863",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/bitstream/fpga_adc_udp_flash_param_rate.bit",
+      "source": "results\\task005\\minimal_fpga_project\\bitstream\\fpga_adc_udp_flash_param_rate.bit",
+      "source_sha256": "340db5026f4312bfd3241ec9b73359a9f777f1614dc8bf67c5f3683dbaf98307",
+      "release_sha256": "340db5026f4312bfd3241ec9b73359a9f777f1614dc8bf67c5f3683dbaf98307",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/bitstream/fpga_adc_udp_flash_param_rate.mcs",
+      "source": "results\\task005\\minimal_fpga_project\\bitstream\\fpga_adc_udp_flash_param_rate.mcs",
+      "source_sha256": "cb4b147c653f62511433a51a0786698b06314ad8c03ed1fe2ae81061554894dd",
+      "release_sha256": "cb4b147c653f62511433a51a0786698b06314ad8c03ed1fe2ae81061554894dd",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/constraints/fpga_adc_udp_flash_param.xdc",
+      "source": "results\\task005\\minimal_fpga_project\\constraints\\fpga_adc_udp_flash_param.xdc",
+      "source_sha256": "9cfb148dc54d668a23d4d6b4ffaa0be216b9a9a123f329a41d1765c16a69281f",
+      "release_sha256": "9cfb148dc54d668a23d4d6b4ffaa0be216b9a9a123f329a41d1765c16a69281f",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/reports/drc.rpt",
+      "source": "results\\task005\\minimal_fpga_project\\reports\\drc.rpt",
+      "source_sha256": "eabe61426d1bd24b57b6cde84cef5f5cb674a7a72366d33d4a788fc5e67364ef",
+      "release_sha256": "eabe61426d1bd24b57b6cde84cef5f5cb674a7a72366d33d4a788fc5e67364ef",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/reports/io.rpt",
+      "source": "results\\task005\\minimal_fpga_project\\reports\\io.rpt",
+      "source_sha256": "2b9d4723a7da88173dd5d0e1b1b26a5318f59f5960f685f1761d01dfbe119c5a",
+      "release_sha256": "2b9d4723a7da88173dd5d0e1b1b26a5318f59f5960f685f1761d01dfbe119c5a",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/reports/timing_summary.rpt",
+      "source": "results\\task005\\minimal_fpga_project\\reports\\timing_summary.rpt",
+      "source_sha256": "ff80193f1be739c3765139085dc7650b8eceba139b6e657d1e5a045c86b2ef3e",
+      "release_sha256": "ff80193f1be739c3765139085dc7650b8eceba139b6e657d1e5a045c86b2ef3e",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/reports/utilization.rpt",
+      "source": "results\\task005\\minimal_fpga_project\\reports\\utilization.rpt",
+      "source_sha256": "6390824a007f3463add91f4a0f7ddcf09ee0ef0c64fd0e8508cac79378450e8a",
+      "release_sha256": "6390824a007f3463add91f4a0f7ddcf09ee0ef0c64fd0e8508cac79378450e8a",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/ad7606c_device_frontend.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\ad7606c_device_frontend.v",
+      "source_sha256": "9e781527d5e792e60f5257dc37fc3b522b8a0d0aa8c335f8229cbc21bbf6f43d",
+      "release_sha256": "9e781527d5e792e60f5257dc37fc3b522b8a0d0aa8c335f8229cbc21bbf6f43d",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/ad7606c_parallel_controller.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\ad7606c_parallel_controller.v",
+      "source_sha256": "ca80464695f1d5e90c64d58b7411688f03a210377eecca4a20d6f57fb92f1595",
+      "release_sha256": "ca80464695f1d5e90c64d58b7411688f03a210377eecca4a20d6f57fb92f1595",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/ad7606c_parallel_reg_master.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\ad7606c_parallel_reg_master.v",
+      "source_sha256": "6b30b14dd448b33c9be2f43a9f5f34e5bab10ecd52f4c19ba6c57fe4324d5f7e",
+      "release_sha256": "6b30b14dd448b33c9be2f43a9f5f34e5bab10ecd52f4c19ba6c57fe4324d5f7e",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/ad7606c_pipelined_controller.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\ad7606c_pipelined_controller.v",
+      "source_sha256": "9affd7001cfaa86ad160efc76617b0c9ef52fe3eb7810bbdd750779991fe3450",
+      "release_sha256": "9affd7001cfaa86ad160efc76617b0c9ef52fe3eb7810bbdd750779991fe3450",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/adc_capture_24ch.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\adc_capture_24ch.v",
+      "source_sha256": "0f25f240bcd2162ae9040fc1b76da329bc2b08cb2d14915185f9e1ba0f11773c",
+      "release_sha256": "0f25f240bcd2162ae9040fc1b76da329bc2b08cb2d14915185f9e1ba0f11773c",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/arp_request_runtime.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\arp_request_runtime.v",
+      "source_sha256": "c9e7f75118ee7ad27d081735ff85ab64d610a7d2b3c5d02b76ac038f0c2f1631",
+      "release_sha256": "c9e7f75118ee7ad27d081735ff85ab64d610a7d2b3c5d02b76ac038f0c2f1631",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/button_debounce.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\button_debounce.v",
+      "source_sha256": "51961e1888931469eaae54f911969bc95584df488dffbd8ec3fe864a625848e9",
+      "release_sha256": "51961e1888931469eaae54f911969bc95584df488dffbd8ec3fe864a625848e9",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/cdc_bit_sync.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\cdc_bit_sync.v",
+      "source_sha256": "08ac1f21d346582c534265430bf7862bbcfd2e4c512411b47d8b7395e9fbd745",
+      "release_sha256": "08ac1f21d346582c534265430bf7862bbcfd2e4c512411b47d8b7395e9fbd745",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/cdc_pulse_sync.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\cdc_pulse_sync.v",
+      "source_sha256": "ce2cd5c4f345d75915c932aedf32029221b9eeb918c0c8b8c1abefc3dd29518a",
+      "release_sha256": "ce2cd5c4f345d75915c932aedf32029221b9eeb918c0c8b8c1abefc3dd29518a",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/clock_reset_ctrl.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\clock_reset_ctrl.v",
+      "source_sha256": "dd9b4435b107e39992baaa42079f0b3013b48a4aeeb61fec83ea383a76444e65",
+      "release_sha256": "dd9b4435b107e39992baaa42079f0b3013b48a4aeeb61fec83ea383a76444e65",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/config_validate.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\config_validate.v",
+      "source_sha256": "4daef1047782e8808f2219d81c011713c3d26c7f9855a6d9f391af4d1629c414",
+      "release_sha256": "4daef1047782e8808f2219d81c011713c3d26c7f9855a6d9f391af4d1629c414",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/control_response_tx_runtime.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\control_response_tx_runtime.v",
+      "source_sha256": "395c9f635228157faa2dca68243c0f1e38f3d48338ad1e814c41eaaeebfe5226",
+      "release_sha256": "395c9f635228157faa2dca68243c0f1e38f3d48338ad1e814c41eaaeebfe5226",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/control_udp_rx_runtime.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\control_udp_rx_runtime.v",
+      "source_sha256": "8dc6d34b30ba2dad57f7e6f35e640f86bc59bca4577d7acbea701cbca321f293",
+      "release_sha256": "8dc6d34b30ba2dad57f7e6f35e640f86bc59bca4577d7acbea701cbca321f293",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/eth_crc32.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\eth_crc32.v",
+      "source_sha256": "32be454c9229d17e4b468004c678778b44d9ff329304fe34221dae9b76d1fa38",
+      "release_sha256": "32be454c9229d17e4b468004c678778b44d9ff329304fe34221dae9b76d1fa38",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/eth_mac_tx.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\eth_mac_tx.v",
+      "source_sha256": "29609f9c71a9661624063d1ec107f94b255a2ffea494038cbdf9170163c63f7b",
+      "release_sha256": "29609f9c71a9661624063d1ec107f94b255a2ffea494038cbdf9170163c63f7b",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/fifo_udp_payload_runtime.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\fifo_udp_payload_runtime.v",
+      "source_sha256": "ea5b32866a1fdbeb31f58e37dcd5baba1e84fe369eb9960f7dc97dcf9a776c14",
+      "release_sha256": "ea5b32866a1fdbeb31f58e37dcd5baba1e84fe369eb9960f7dc97dcf9a776c14",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/fifo_udp_stream_runtime.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\fifo_udp_stream_runtime.v",
+      "source_sha256": "d3da50ead591b43188def6f2baffcb127328e7fc14c110fc2d3e4e4f423d2d6b",
+      "release_sha256": "d3da50ead591b43188def6f2baffcb127328e7fc14c110fc2d3e4e4f423d2d6b",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/flash_config_cdc_bridge.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\flash_config_cdc_bridge.v",
+      "source_sha256": "809e63bce5090ae780d4dfac095b4233675f7a39e8ab9102e9294e202a9ed786",
+      "release_sha256": "809e63bce5090ae780d4dfac095b4233675f7a39e8ab9102e9294e202a9ed786",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/flash_param_manager.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\flash_param_manager.v",
+      "source_sha256": "907fe95a4a01d7e9a21589dc511e6b40795b8244df358bc50d39f98c92fe15bb",
+      "release_sha256": "907fe95a4a01d7e9a21589dc511e6b40795b8244df358bc50d39f98c92fe15bb",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/flash_spi_byte_master.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\flash_spi_byte_master.v",
+      "source_sha256": "118cc3447b9cc137fe03c5b3b6e455f1e403c11c3a6c31d373af6d6c3554cf8b",
+      "release_sha256": "118cc3447b9cc137fe03c5b3b6e455f1e403c11c3a6c31d373af6d6c3554cf8b",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/fpga_adc_udp_flash_param_top.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\fpga_adc_udp_flash_param_top.v",
+      "source_sha256": "0d428b34378bdffa787e8102ec62438e9871f6115edb4eca4b5da53fbf48a04c",
+      "release_sha256": "0d428b34378bdffa787e8102ec62438e9871f6115edb4eca4b5da53fbf48a04c",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/frame_arbiter_4to1.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\frame_arbiter_4to1.v",
+      "source_sha256": "0cfaa6cbfdb4c54eac5be93ba06ee5130886ed64fe3ce9f3259c2cd32ee7023b",
+      "release_sha256": "0cfaa6cbfdb4c54eac5be93ba06ee5130886ed64fe3ce9f3259c2cd32ee7023b",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/frame_ram.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\frame_ram.v",
+      "source_sha256": "9b0db0ba9c6a68712491de90c61b3a3a9d9c991dbd46665b5899299c5e31dfd7",
+      "release_sha256": "9b0db0ba9c6a68712491de90c61b3a3a9d9c991dbd46665b5899299c5e31dfd7",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/led_status_blink.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\led_status_blink.v",
+      "source_sha256": "462c3f2cb61bbaae328998cc7961b9e7bf455368dd241c9f182aa2113e930c91",
+      "release_sha256": "462c3f2cb61bbaae328998cc7961b9e7bf455368dd241c9f182aa2113e930c91",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/network_flash_control_core.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\network_flash_control_core.v",
+      "source_sha256": "7172503b1ccb6b2274e065bf22203b28ad770eaf01f25e8dc43e63c312895a96",
+      "release_sha256": "7172503b1ccb6b2274e065bf22203b28ad770eaf01f25e8dc43e63c312895a96",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/ping_reply_tx.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\ping_reply_tx.v",
+      "source_sha256": "7831a246a815d7f2be9e9a319073895f43ba8e759403e076a73dad5e1e392a59",
+      "release_sha256": "7831a246a815d7f2be9e9a319073895f43ba8e759403e076a73dad5e1e392a59",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/ping_rx_engine.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\ping_rx_engine.v",
+      "source_sha256": "795b0485205e7e9ae6414b3877606e1bf03b1080721b15ccd2d165e391e8eb63",
+      "release_sha256": "795b0485205e7e9ae6414b3877606e1bf03b1080721b15ccd2d165e391e8eb63",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/reset_sync.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\reset_sync.v",
+      "source_sha256": "e9c0bf5e97dc9063b3d67c82eb3e06dba958a194f20eb826ceb77a0b839f7bd8",
+      "release_sha256": "e9c0bf5e97dc9063b3d67c82eb3e06dba958a194f20eb826ceb77a0b839f7bd8",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/rgmii_rx_adaptive.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\rgmii_rx_adaptive.v",
+      "source_sha256": "7e601dc6452dfe81c11a7663d1dea02b8d91a5903487be6d6ce0ab4855a1132f",
+      "release_sha256": "7e601dc6452dfe81c11a7663d1dea02b8d91a5903487be6d6ce0ab4855a1132f",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/rgmii_rx_align.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\rgmii_rx_align.v",
+      "source_sha256": "2a467ec581aee5545a923115e5c7d02125f9a4668c2b706221341e46fde3493f",
+      "release_sha256": "2a467ec581aee5545a923115e5c7d02125f9a4668c2b706221341e46fde3493f",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/rgmii_tx.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\rgmii_tx.v",
+      "source_sha256": "bdbc44e9df2c715d67508ce54b88192a0bc917a7a3b5da658a38f8cc25563f0c",
+      "release_sha256": "bdbc44e9df2c715d67508ce54b88192a0bc917a7a3b5da658a38f8cc25563f0c",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/run_control_cdc_bridge.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\run_control_cdc_bridge.v",
+      "source_sha256": "e1aff3f7b64ffa94fc8e717f36453957cd41b0500781b62dc37cae253e712990",
+      "release_sha256": "e1aff3f7b64ffa94fc8e717f36453957cd41b0500781b62dc37cae253e712990",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/runtime_config_manager.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\runtime_config_manager.v",
+      "source_sha256": "32fb0ee84e519002797681607230f8ab57ef76cd55badcf68f631383f6dc6fe8",
+      "release_sha256": "32fb0ee84e519002797681607230f8ab57ef76cd55badcf68f631383f6dc6fe8",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/runtime_payload_length.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\runtime_payload_length.v",
+      "source_sha256": "c650116d2597e1c61aae44523d8a97f4f11f80da3a465455c6d17ae7e948e5e8",
+      "release_sha256": "c650116d2597e1c61aae44523d8a97f4f11f80da3a465455c6d17ae7e948e5e8",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/sample_group_async_fifo.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\sample_group_async_fifo.v",
+      "source_sha256": "3387f72348bf9844ad5c9bdf2f378e4f8fa95e5cebbe29effbc5c5b65d7bd3f7",
+      "release_sha256": "3387f72348bf9844ad5c9bdf2f378e4f8fa95e5cebbe29effbc5c5b65d7bd3f7",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/sample_rate_config_cdc.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\sample_rate_config_cdc.v",
+      "source_sha256": "5a38eb182bcd1df27baf2cc762031f595d69f8f7c4dd16a3900e530a3a35d8ed",
+      "release_sha256": "5a38eb182bcd1df27baf2cc762031f595d69f8f7c4dd16a3900e530a3a35d8ed",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/stream_pipeline.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\stream_pipeline.v",
+      "source_sha256": "a85253b1c901d7a4e5ec39b4b43c92d4075d72b81839eef248649fa5d396e9f2",
+      "release_sha256": "a85253b1c901d7a4e5ec39b4b43c92d4075d72b81839eef248649fa5d396e9f2",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/system_run_ctrl.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\system_run_ctrl.v",
+      "source_sha256": "ec170a0114090ed2d1d79daf2d48a3d123ffbbc86435e22971413bcbe92a1502",
+      "release_sha256": "ec170a0114090ed2d1d79daf2d48a3d123ffbbc86435e22971413bcbe92a1502",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/rtl/udp_ipv4_tx_runtime.v",
+      "source": "results\\task005\\minimal_fpga_project\\rtl\\udp_ipv4_tx_runtime.v",
+      "source_sha256": "fec6c12277ed02f37ed99d2dabe0c81c9cfd4ea8c793a0bf1468860955272391",
+      "release_sha256": "fec6c12277ed02f37ed99d2dabe0c81c9cfd4ea8c793a0bf1468860955272391",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/scripts/build_minimal.ps1",
+      "source": "results\\task005\\minimal_fpga_project\\scripts\\build_minimal.ps1",
+      "source_sha256": "5e99d5d1c0fbbe36760abc30d397fb6e0a14efdad34535fdd5139a1e8f9e20ba",
+      "release_sha256": "97b1d36a7b0787321fa4bef84d210149d569d819db9c2bc95644d07c56e778b9",
+      "modified_for_release": true
+    },
+    {
+      "path": "fpga/scripts/build_minimal.tcl",
+      "source": "results\\task005\\minimal_fpga_project\\scripts\\build_minimal.tcl",
+      "source_sha256": "065374b5d42cbaf3708af57cf76891318cf23208c983c996e00684d05adaf2f7",
+      "release_sha256": "065374b5d42cbaf3708af57cf76891318cf23208c983c996e00684d05adaf2f7",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/scripts/clean_output.ps1",
+      "source": "results\\task005\\minimal_fpga_project\\scripts\\clean_output.ps1",
+      "source_sha256": "885803f4e9636d43de466076f269501017b7eb2eb1f394554b5808343c380b63",
+      "release_sha256": "885803f4e9636d43de466076f269501017b7eb2eb1f394554b5808343c380b63",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/scripts/create_project.ps1",
+      "source": "results\\task005\\minimal_fpga_project\\scripts\\create_project.ps1",
+      "source_sha256": "5c8bbaabee6d5e5b9172aaddc79f7d6997759af6f7f0abfdb9b450c87f89a655",
+      "release_sha256": "c7686699c2b15ed106fb5106b8ecc6568c076475af58a0ac690360448eddfd50",
+      "modified_for_release": true
+    },
+    {
+      "path": "fpga/scripts/create_project.tcl",
+      "source": "results\\task005\\minimal_fpga_project\\scripts\\create_project.tcl",
+      "source_sha256": "f0166e2eaf1f015d0d916ef8fcc014870f8215a205c7298bb8c0a6ce4ef09ad1",
+      "release_sha256": "f0166e2eaf1f015d0d916ef8fcc014870f8215a205c7298bb8c0a6ce4ef09ad1",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/scripts/flash_image_guard.tcl",
+      "source": "results\\task005\\minimal_fpga_project\\scripts\\flash_image_guard.tcl",
+      "source_sha256": "6a40ae3a0ccd44686a16b1e05d7073db5c01727c3f11bd806754c5dadf500aeb",
+      "release_sha256": "6a40ae3a0ccd44686a16b1e05d7073db5c01727c3f11bd806754c5dadf500aeb",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/scripts/preserve_frame_ram.tcl",
+      "source": "results\\task005\\minimal_fpga_project\\scripts\\preserve_frame_ram.tcl",
+      "source_sha256": "ea99af1e1ef40381fce7ed6a95e3f2fecf13767f786209f6d37a3285e637c331",
+      "release_sha256": "ea99af1e1ef40381fce7ed6a95e3f2fecf13767f786209f6d37a3285e637c331",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/scripts/program_qspi_preserve_params.tcl",
+      "source": "results\\task005\\minimal_fpga_project\\scripts\\program_qspi_preserve_params.tcl",
+      "source_sha256": "605297fd71d1c048b69e74a9f5e6bc1fd380ac94b66c6d9999c5cb15c87590b7",
+      "release_sha256": "605297fd71d1c048b69e74a9f5e6bc1fd380ac94b66c6d9999c5cb15c87590b7",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/scripts/program_qspi.ps1",
+      "source": "results\\task005\\minimal_fpga_project\\scripts\\program_qspi.ps1",
+      "source_sha256": "ebfeb3db81d8486db974c03d975bb122ba73153f0cdccb3476d5d9a213808cf5",
+      "release_sha256": "775c9292ed96805cef67f7a851b926cdb93181909bc219424edcdb84102ef365",
+      "modified_for_release": true
+    },
+    {
+      "path": "fpga/scripts/run_pipeline_sim.ps1",
+      "source": "results\\task005\\minimal_fpga_project\\scripts\\run_pipeline_sim.ps1",
+      "source_sha256": "87e9f224284984e9c3163b5c89047816db8ea83fcf6fd599059a9e2f61d9ac74",
+      "release_sha256": "2fc000284487c5359e94c5bad1b7fe3b189bae7b71b2e2c2cd226dfd0381b89e",
+      "modified_for_release": true
+    },
+    {
+      "path": "fpga/scripts/validate_project.ps1",
+      "source": "results\\task005\\minimal_fpga_project\\scripts\\validate_project.ps1",
+      "source_sha256": "1fbc2783df66be218cbfc6e81072bd15197bf24e528b04341ac297672309dde6",
+      "release_sha256": "09369e7469630822b47ba39644ce6a67d891c5d9037b4cc782185b737b2788de",
+      "modified_for_release": true
+    },
+    {
+      "path": "fpga/scripts/validate_project.tcl",
+      "source": "results\\task005\\minimal_fpga_project\\scripts\\validate_project.tcl",
+      "source_sha256": "7c247861efdbdba863597bd10437d0083918e4428cbc8c05693bb14ff61fb473",
+      "release_sha256": "7c247861efdbdba863597bd10437d0083918e4428cbc8c05693bb14ff61fb473",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/tb/tb_ad7606c_frstdata_guard.v",
+      "source": "results\\task005\\minimal_fpga_project\\tb\\tb_ad7606c_frstdata_guard.v",
+      "source_sha256": "d494643166f939758bb5f5e993ee6679ade2d7db49c5c46f9c3326affd65719a",
+      "release_sha256": "d494643166f939758bb5f5e993ee6679ade2d7db49c5c46f9c3326affd65719a",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/tb/tb_ad7606c_pipeline_1m.v",
+      "source": "results\\task005\\minimal_fpga_project\\tb\\tb_ad7606c_pipeline_1m.v",
+      "source_sha256": "67afb9db04e60f27689783b227801b020bf4bfe33772dbf1b0d1d257a7bbac15",
+      "release_sha256": "67afb9db04e60f27689783b227801b020bf4bfe33772dbf1b0d1d257a7bbac15",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/vivado_project/fpga_adc_udp_flash_param_minimal.xpr",
+      "source": "results\\task005\\minimal_fpga_project\\vivado_project\\fpga_adc_udp_flash_param_minimal.xpr",
+      "source_sha256": "17696f2472edcf6f7f7291c9648d3abe146afdddfe840d148195f20fffb2bd17",
+      "release_sha256": "4c2d8c80d07cd8aa8fbb1ea2481578ea354394614a7ec51fb925d48aba56ffef",
+      "modified_for_release": true
+    },
+    {
+      "path": "fpga/reports/cdc.rpt",
+      "source": "results\\task004\\final_bitstream\\20261010_141613\\cdc.rpt",
+      "source_sha256": "875ac8e9d0e23d9912a8f0b773318d18bde31a2303aeb254b01e6c4a65c44073",
+      "release_sha256": "875ac8e9d0e23d9912a8f0b773318d18bde31a2303aeb254b01e6c4a65c44073",
+      "modified_for_release": false
+    },
+    {
+      "path": "fpga/reports/methodology.rpt",
+      "source": "results\\task004\\final_bitstream\\20261010_141613\\methodology.rpt",
+      "source_sha256": "23175558135fc3722cc2edb00ca15984635efdcb931f2dcf2f42dc706a139d3d",
+      "release_sha256": "23175558135fc3722cc2edb00ca15984635efdcb931f2dcf2f42dc706a139d3d",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/rtl/arp_request_tx.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\rtl\\arp_request_tx.v",
+      "source_sha256": "84d33bef8cfebd9bfd7527e549c0a67802a7beda8a97b4d418be364f5c102d54",
+      "release_sha256": "84d33bef8cfebd9bfd7527e549c0a67802a7beda8a97b4d418be364f5c102d54",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/rtl/fifo_udp_payload_gen.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\rtl\\fifo_udp_payload_gen.v",
+      "source_sha256": "e4598d1dee47ff1f25e072cd9fc1952f1d84153d73730747172f5aa11b0fed47",
+      "release_sha256": "e4598d1dee47ff1f25e072cd9fc1952f1d84153d73730747172f5aa11b0fed47",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/rtl/fifo_udp_stream_tx.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\rtl\\fifo_udp_stream_tx.v",
+      "source_sha256": "abfdbd91032bac87e94501fa265573058b376b345252245fb678eef3bd012b65",
+      "release_sha256": "abfdbd91032bac87e94501fa265573058b376b345252245fb678eef3bd012b65",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/rtl/fpga_adc_udp_flash_param_no_flash_pins_top.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\rtl\\fpga_adc_udp_flash_param_no_flash_pins_top.v",
+      "source_sha256": "2f87e570e071a1fa715501016444e04f272ed4d565005eac8a5970ce38be456b",
+      "release_sha256": "2f87e570e071a1fa715501016444e04f272ed4d565005eac8a5970ce38be456b",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/rtl/fpga_adc_udp_merged_top.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\rtl\\fpga_adc_udp_merged_top.v",
+      "source_sha256": "c0136c8a2f89e1c40e6fe276ecc7f2d489dee32455227c076a4fbf7f01243a73",
+      "release_sha256": "c0136c8a2f89e1c40e6fe276ecc7f2d489dee32455227c076a4fbf7f01243a73",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/rtl/fpga_minimal_demo_top.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\rtl\\fpga_minimal_demo_top.v",
+      "source_sha256": "e79493c2a3b1b6d36e76f9ca1f60fa9628072c598aea7797fa67f640dd286b42",
+      "release_sha256": "e79493c2a3b1b6d36e76f9ca1f60fa9628072c598aea7797fa67f640dd286b42",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/rtl/frame_arbiter_2to1.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\rtl\\frame_arbiter_2to1.v",
+      "source_sha256": "ed59158730a433754749069a45a11e69ebb8d4eea4658e1e94a0d39a83354fb2",
+      "release_sha256": "ed59158730a433754749069a45a11e69ebb8d4eea4658e1e94a0d39a83354fb2",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/rtl/network_stream_core.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\rtl\\network_stream_core.v",
+      "source_sha256": "28af4cf979bb610b787b01c5ffe82b949d7802be0ca75e381fc990e4e8e404dc",
+      "release_sha256": "28af4cf979bb610b787b01c5ffe82b949d7802be0ca75e381fc990e4e8e404dc",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/rtl/sample_group_generator.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\rtl\\sample_group_generator.v",
+      "source_sha256": "b9ce39192cc55f5ce81101996daa36577aae92be9be461763f32546635514044",
+      "release_sha256": "b9ce39192cc55f5ce81101996daa36577aae92be9be461763f32546635514044",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/rtl/udp_ipv4_tx.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\rtl\\udp_ipv4_tx.v",
+      "source_sha256": "1632648db176442ad9afea4f3c88dd71d90804123bb23d780f53e20b03473a02",
+      "release_sha256": "1632648db176442ad9afea4f3c88dd71d90804123bb23d780f53e20b03473a02",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/tb/tb_ad7606c_500ksps.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\tb\\tb_ad7606c_500ksps.v",
+      "source_sha256": "971d715d7b2e586928b1d7b99447f7b99c72b8652b657165053bb13ac961417b",
+      "release_sha256": "971d715d7b2e586928b1d7b99447f7b99c72b8652b657165053bb13ac961417b",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/tb/tb_cdc_status.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\tb\\tb_cdc_status.v",
+      "source_sha256": "200ac579c930317145296478c0b9876b9cb770baa4776102ccc829e66251e495",
+      "release_sha256": "200ac579c930317145296478c0b9876b9cb770baa4776102ccc829e66251e495",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/tb/tb_config_validate.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\tb\\tb_config_validate.v",
+      "source_sha256": "b9868705694d1462d8f420e51a6e244b20972ef40cf43101f05f75e1f3d1b71d",
+      "release_sha256": "b9868705694d1462d8f420e51a6e244b20972ef40cf43101f05f75e1f3d1b71d",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/tb/tb_flash_boot.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\tb\\tb_flash_boot.v",
+      "source_sha256": "73ec0fe20b3524973d6dfe249f4bf70962de56f98efae64960cfe04f19fd044e",
+      "release_sha256": "73ec0fe20b3524973d6dfe249f4bf70962de56f98efae64960cfe04f19fd044e",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/tb/tb_led_status_blink.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\tb\\tb_led_status_blink.v",
+      "source_sha256": "7a9a0f683f0cb65627fb6859cf7033e1a28cd2ded1ec94cdfe1d3abd0114dcd2",
+      "release_sha256": "7a9a0f683f0cb65627fb6859cf7033e1a28cd2ded1ec94cdfe1d3abd0114dcd2",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/tb/tb_runtime_config_manager.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\tb\\tb_runtime_config_manager.v",
+      "source_sha256": "1ff6b3218d885d9df9f7e5c2eefa1de9497d52107eaf4a885f72530a053312d7",
+      "release_sha256": "1ff6b3218d885d9df9f7e5c2eefa1de9497d52107eaf4a885f72530a053312d7",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/tb/tb_runtime_payload_length.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\tb\\tb_runtime_payload_length.v",
+      "source_sha256": "79b118b7ec75f4fd46494b1e171b735b8042be958af7e3ae416a8ea8e3889579",
+      "release_sha256": "79b118b7ec75f4fd46494b1e171b735b8042be958af7e3ae416a8ea8e3889579",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/tb/tb_run_control_cdc_bridge.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\tb\\tb_run_control_cdc_bridge.v",
+      "source_sha256": "9e56951d60b1da9fef4d55f9813ef54ca680a56f713e8f8eefa2fe491f19e983",
+      "release_sha256": "9e56951d60b1da9fef4d55f9813ef54ca680a56f713e8f8eefa2fe491f19e983",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/tb/tb_sample_rate_config_cdc.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\tb\\tb_sample_rate_config_cdc.v",
+      "source_sha256": "4b982c7e8e01c1465f39216e8c86ba4930e8ba2d296c28d0cd18b005f8dc84ab",
+      "release_sha256": "4b982c7e8e01c1465f39216e8c86ba4930e8ba2d296c28d0cd18b005f8dc84ab",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/tb/tb_system_run_ctrl.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\tb\\tb_system_run_ctrl.v",
+      "source_sha256": "c3a7b2286d19cc01e9047a2dae566c36a71e754b7d08b8be838cf227d204dc0a",
+      "release_sha256": "c3a7b2286d19cc01e9047a2dae566c36a71e754b7d08b8be838cf227d204dc0a",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/tb/tb_udp_ipv4_min_frame.v",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\tb\\tb_udp_ipv4_min_frame.v",
+      "source_sha256": "8d1286885b0c582746d488f5566a366a7e522df389c0ee9729b39e0dcc5ee000",
+      "release_sha256": "8d1286885b0c582746d488f5566a366a7e522df389c0ee9729b39e0dcc5ee000",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/scripts/build_release.ps1",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\scripts\\build_release.ps1",
+      "source_sha256": "8968b3092da1c313a40028a543036b59fb6defe009fe95e00674e173181feaa6",
+      "release_sha256": "8968b3092da1c313a40028a543036b59fb6defe009fe95e00674e173181feaa6",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/scripts/build_release.tcl",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\scripts\\build_release.tcl",
+      "source_sha256": "f9a175964599b8a84a8a197d6f0ddf8da5a30cb30edd44231bbe3517dc0ea0ae",
+      "release_sha256": "f9a175964599b8a84a8a197d6f0ddf8da5a30cb30edd44231bbe3517dc0ea0ae",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/scripts/build_task004_final_bitstream.ps1",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\scripts\\build_task004_final_bitstream.ps1",
+      "source_sha256": "07cf76aeecc5e8e8bfa59336afb91b4a71c05f633425e5f0dde5eb96269ae2fd",
+      "release_sha256": "07cf76aeecc5e8e8bfa59336afb91b4a71c05f633425e5f0dde5eb96269ae2fd",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/scripts/build_task004_final_bitstream.tcl",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\scripts\\build_task004_final_bitstream.tcl",
+      "source_sha256": "6b46a19cbb9780e791460c3f9a3cb988034572221eba4cc50ea1135fa61f7c03",
+      "release_sha256": "6b46a19cbb9780e791460c3f9a3cb988034572221eba4cc50ea1135fa61f7c03",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/scripts/check_guard.tcl",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\scripts\\check_guard.tcl",
+      "source_sha256": "185e13b8a40319b43b3c4ce76152d9d6f13b643e5d85203dbf7235c1fb8b292c",
+      "release_sha256": "185e13b8a40319b43b3c4ce76152d9d6f13b643e5d85203dbf7235c1fb8b292c",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/scripts/clean_task004_final_bitstream.ps1",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\scripts\\clean_task004_final_bitstream.ps1",
+      "source_sha256": "28230323aaf8836137fbf49538c3ee49b8169eaa69a111710134ce441413bfe4",
+      "release_sha256": "28230323aaf8836137fbf49538c3ee49b8169eaa69a111710134ce441413bfe4",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/scripts/create_project.tcl",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\scripts\\create_project.tcl",
+      "source_sha256": "d50447ade6673cf01690c15ca3f1f755acdfe7601aedb64cbb969910a0fce353",
+      "release_sha256": "d50447ade6673cf01690c15ca3f1f755acdfe7601aedb64cbb969910a0fce353",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/scripts/flash_image_guard.tcl",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\scripts\\flash_image_guard.tcl",
+      "source_sha256": "6a40ae3a0ccd44686a16b1e05d7073db5c01727c3f11bd806754c5dadf500aeb",
+      "release_sha256": "6a40ae3a0ccd44686a16b1e05d7073db5c01727c3f11bd806754c5dadf500aeb",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/scripts/program_bitstream_preserve_params.ps1",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\scripts\\program_bitstream_preserve_params.ps1",
+      "source_sha256": "ff79d4d012cbf459c1e5dc0ac38ab23410f92a84177b627fd8a26970b30e3a5b",
+      "release_sha256": "ff79d4d012cbf459c1e5dc0ac38ab23410f92a84177b627fd8a26970b30e3a5b",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/scripts/program_bitstream_preserve_params.tcl",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\scripts\\program_bitstream_preserve_params.tcl",
+      "source_sha256": "8251777a27fe204403ca3bf216dc736dd7c2fa8ca3fecfaa49c644a416ca5dfa",
+      "release_sha256": "8251777a27fe204403ca3bf216dc736dd7c2fa8ca3fecfaa49c644a416ca5dfa",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/scripts/run_ad7606c_pipeline_sim.ps1",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\scripts\\run_ad7606c_pipeline_sim.ps1",
+      "source_sha256": "87e9f224284984e9c3163b5c89047816db8ea83fcf6fd599059a9e2f61d9ac74",
+      "release_sha256": "87e9f224284984e9c3163b5c89047816db8ea83fcf6fd599059a9e2f61d9ac74",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/scripts/run_flash_sim.ps1",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\scripts\\run_flash_sim.ps1",
+      "source_sha256": "4785baf2a6396a14a2e3ededcfdf961db25a077b63feb4f384ed7442a6ca4cbd",
+      "release_sha256": "4785baf2a6396a14a2e3ededcfdf961db25a077b63feb4f384ed7442a6ca4cbd",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/scripts/run_led_sim.ps1",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\scripts\\run_led_sim.ps1",
+      "source_sha256": "c77a332ea3cfd0f83278ce43e6236ac0f8cf1cc37875a5bc25cfcc32250df9fc",
+      "release_sha256": "c77a332ea3cfd0f83278ce43e6236ac0f8cf1cc37875a5bc25cfcc32250df9fc",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/scripts/run_smoke_sim.ps1",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\scripts\\run_smoke_sim.ps1",
+      "source_sha256": "e32e1d476292bd243204cc4383dd0a61d7dbcab2b785aeffe04c2e6e706a7578",
+      "release_sha256": "e32e1d476292bd243204cc4383dd0a61d7dbcab2b785aeffe04c2e6e706a7578",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/pc_tools/adc_udp_monitor.cpp",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\pc_tools\\adc_udp_monitor.cpp",
+      "source_sha256": "281caa4636e8268c74f3d492625f5e94e2c38f5714a7a96a4e30ae8adc624575",
+      "release_sha256": "281caa4636e8268c74f3d492625f5e94e2c38f5714a7a96a4e30ae8adc624575",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/pc_tools/build_cli.ps1",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\pc_tools\\build_cli.ps1",
+      "source_sha256": "4220df98d4457c70999a130ce5b449917abd156bf17f0711b741674d5e5f0583",
+      "release_sha256": "4220df98d4457c70999a130ce5b449917abd156bf17f0711b741674d5e5f0583",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/pc_tools/build_monitor.ps1",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\pc_tools\\build_monitor.ps1",
+      "source_sha256": "fab9c126dae6a889fa7267fcdf7b5d1649a6b0ae9a9a249da49308394493e623",
+      "release_sha256": "fab9c126dae6a889fa7267fcdf7b5d1649a6b0ae9a9a249da49308394493e623",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/pc_tools/fpga_param_cli.cpp",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\pc_tools\\fpga_param_cli.cpp",
+      "source_sha256": "b95a602edff48f9117cbaef54c3b7d9b1504b78475afa87e26976875bd5d44a4",
+      "release_sha256": "b95a602edff48f9117cbaef54c3b7d9b1504b78475afa87e26976875bd5d44a4",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/docs/control_protocol.md",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\docs\\CONTROL_PROTOCOL.md",
+      "source_sha256": "be8c7a4dabb824df224e007b7b1edf177bbc5cb0b42abaabba47a92a9362a029",
+      "release_sha256": "be8c7a4dabb824df224e007b7b1edf177bbc5cb0b42abaabba47a92a9362a029",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/docs/flash_safety.md",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\docs\\FLASH_SAFETY.md",
+      "source_sha256": "a062798aa5c08d92216661211dc74dea11475fac1c55f6b6181ae91f03ef3b9c",
+      "release_sha256": "a062798aa5c08d92216661211dc74dea11475fac1c55f6b6181ae91f03ef3b9c",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/fpga/docs/rate_switch.md",
+      "source": "co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\docs\\RATE_SWITCH.md",
+      "source_sha256": "6f49b2d0d8a8bc38ecce6d1ec7b13da4374fda5ba7e92e2b76bd649a62428a01",
+      "release_sha256": "6f49b2d0d8a8bc38ecce6d1ec7b13da4374fda5ba7e92e2b76bd649a62428a01",
+      "modified_for_release": false
+    },
+    {
+      "path": "qt/src/adcmath.h",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\src\\adcmath.h",
+      "source_sha256": "4fba6200c0bdf683865e38b4e322594849102ffe1675898d900505b9954b9af2",
+      "release_sha256": "4fba6200c0bdf683865e38b4e322594849102ffe1675898d900505b9954b9af2",
+      "modified_for_release": false
+    },
+    {
+      "path": "qt/src/controlclient.cpp",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\src\\controlclient.cpp",
+      "source_sha256": "90ab4b3b204d6a6f42e2c8513f6c350d0b82fd64f26a93da40ec9decab17c508",
+      "release_sha256": "90ab4b3b204d6a6f42e2c8513f6c350d0b82fd64f26a93da40ec9decab17c508",
+      "modified_for_release": false
+    },
+    {
+      "path": "qt/src/controlclient.h",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\src\\controlclient.h",
+      "source_sha256": "b9e2ed16e01b402c8ea1bfe5545566c7794c6f596e62a2217e349ecc3476c9b7",
+      "release_sha256": "b9e2ed16e01b402c8ea1bfe5545566c7794c6f596e62a2217e349ecc3476c9b7",
+      "modified_for_release": false
+    },
+    {
+      "path": "qt/src/csvrecorder.cpp",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\src\\csvrecorder.cpp",
+      "source_sha256": "9b9a4b523f775bcd22c2f95bec1b844dba391381e56633aae9266f22181868c2",
+      "release_sha256": "9b9a4b523f775bcd22c2f95bec1b844dba391381e56633aae9266f22181868c2",
+      "modified_for_release": false
+    },
+    {
+      "path": "qt/src/csvrecorder.h",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\src\\csvrecorder.h",
+      "source_sha256": "d6029a16356924ef9ab0096a4d1f57ebd3d6539d20e84bf50950da6ba0f91c95",
+      "release_sha256": "d6029a16356924ef9ab0096a4d1f57ebd3d6539d20e84bf50950da6ba0f91c95",
+      "modified_for_release": false
+    },
+    {
+      "path": "qt/src/dataworker.cpp",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\src\\dataworker.cpp",
+      "source_sha256": "f60cccff2e32b5ba959db1ba17a8df04072a1ce6d582066621779ad91570da18",
+      "release_sha256": "f60cccff2e32b5ba959db1ba17a8df04072a1ce6d582066621779ad91570da18",
+      "modified_for_release": false
+    },
+    {
+      "path": "qt/src/dataworker.h",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\src\\dataworker.h",
+      "source_sha256": "0d9f44001f05b090833b20648c1b867e4144bdb33a2fc168420aee48fb863d47",
+      "release_sha256": "0d9f44001f05b090833b20648c1b867e4144bdb33a2fc168420aee48fb863d47",
+      "modified_for_release": false
+    },
+    {
+      "path": "qt/src/main.cpp",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\src\\main.cpp",
+      "source_sha256": "4e0655976f2fc633ed8fe40e4f38c5be7f9045a6a1da28babf3e2e81e202538d",
+      "release_sha256": "4e0655976f2fc633ed8fe40e4f38c5be7f9045a6a1da28babf3e2e81e202538d",
+      "modified_for_release": false
+    },
+    {
+      "path": "qt/src/mainwindow.cpp",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\src\\mainwindow.cpp",
+      "source_sha256": "06dbcc0f4d201478dfb0a426317ea31e261c27c2c939dca6463d17625eb8e099",
+      "release_sha256": "06dbcc0f4d201478dfb0a426317ea31e261c27c2c939dca6463d17625eb8e099",
+      "modified_for_release": false
+    },
+    {
+      "path": "qt/src/mainwindow.h",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\src\\mainwindow.h",
+      "source_sha256": "60d6dd3f8475fbb61786cc36d5ab23382b8effc4d82e815ecd21e24c2a2b0beb",
+      "release_sha256": "60d6dd3f8475fbb61786cc36d5ab23382b8effc4d82e815ecd21e24c2a2b0beb",
+      "modified_for_release": false
+    },
+    {
+      "path": "qt/src/protocol.cpp",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\src\\protocol.cpp",
+      "source_sha256": "d5cd744592c921173d94d917f5ddcd58803e293055adf83f7285f9bbd175849f",
+      "release_sha256": "d5cd744592c921173d94d917f5ddcd58803e293055adf83f7285f9bbd175849f",
+      "modified_for_release": false
+    },
+    {
+      "path": "qt/src/protocol.h",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\src\\protocol.h",
+      "source_sha256": "ff7efc2f5c990362a1058462a49edeba0025b8e9cea76d5019afb23f53831545",
+      "release_sha256": "ff7efc2f5c990362a1058462a49edeba0025b8e9cea76d5019afb23f53831545",
+      "modified_for_release": false
+    },
+    {
+      "path": "qt/src/waveviewmath.h",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\src\\waveviewmath.h",
+      "source_sha256": "a13e7ecb4b345b6e09572561907b11bf4ef02174ffb00c69202fbb980040c20a",
+      "release_sha256": "a13e7ecb4b345b6e09572561907b11bf4ef02174ffb00c69202fbb980040c20a",
+      "modified_for_release": false
+    },
+    {
+      "path": "qt/src/wavewidget.cpp",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\src\\wavewidget.cpp",
+      "source_sha256": "394955fc8866661f540fd33e264fb2d1331b7f972cf2a3b28f32f20779e47a8e",
+      "release_sha256": "394955fc8866661f540fd33e264fb2d1331b7f972cf2a3b28f32f20779e47a8e",
+      "modified_for_release": false
+    },
+    {
+      "path": "qt/src/wavewidget.h",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\src\\wavewidget.h",
+      "source_sha256": "bcd877b5ccf0dccc04ecdadc2c9911b3e39e177863049a6793d14b39f8813387",
+      "release_sha256": "bcd877b5ccf0dccc04ecdadc2c9911b3e39e177863049a6793d14b39f8813387",
+      "modified_for_release": false
+    },
+    {
+      "path": "qt/tests/controlclient_mock_tests.cpp",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\tests\\controlclient_mock_tests.cpp",
+      "source_sha256": "5e2a4f483ea88cb24e93cd5e26111a45b6f4854dffa8e29048bcb321c4c04d22",
+      "release_sha256": "5e2a4f483ea88cb24e93cd5e26111a45b6f4854dffa8e29048bcb321c4c04d22",
+      "modified_for_release": false
+    },
+    {
+      "path": "qt/tests/monitor_math_tests.cpp",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\tests\\monitor_math_tests.cpp",
+      "source_sha256": "a7eaca05dc6ce5c4023d8d607238ba81cb4603e3c2d5630bae0b607fe57ec4a1",
+      "release_sha256": "a7eaca05dc6ce5c4023d8d607238ba81cb4603e3c2d5630bae0b607fe57ec4a1",
+      "modified_for_release": false
+    },
+    {
+      "path": "qt/tests/protocol_tests.cpp",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\tests\\protocol_tests.cpp",
+      "source_sha256": "152eabe075982802436b1f77cd9d58a71af877008da9835d19de5775a242d436",
+      "release_sha256": "152eabe075982802436b1f77cd9d58a71af877008da9835d19de5775a242d436",
+      "modified_for_release": false
+    },
+    {
+      "path": "qt/cmakelists.txt",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\CMakeLists.txt",
+      "source_sha256": "f62f9a15f3259406b624333d39a3ac2341bda6aeea2a53f79831a29cfbbd2412",
+      "release_sha256": "f62f9a15f3259406b624333d39a3ac2341bda6aeea2a53f79831a29cfbbd2412",
+      "modified_for_release": false
+    },
+    {
+      "path": "qt/readme.md",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\README.md",
+      "source_sha256": "1f6bd4b632f70f2b94ca8bd2760889345d591a5d1ad2cc4ff2f4fce10d31aaaa",
+      "release_sha256": "25945f4a80d84fb9e743b4ae0cadf4c32c979c1cf2590ce5d63e60370837d32f",
+      "modified_for_release": true
+    },
+    {
+      "path": "reference/qt/scripts/build_release.ps1",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\scripts\\build_release.ps1",
+      "source_sha256": "771a8ae29a829aecc403df73b3c6b4c9ff103642545cdcca799232768bf46b89",
+      "release_sha256": "771a8ae29a829aecc403df73b3c6b4c9ff103642545cdcca799232768bf46b89",
+      "modified_for_release": false
+    },
+    {
+      "path": "reference/qt/scripts/deploy_release.ps1",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\scripts\\deploy_release.ps1",
+      "source_sha256": "1211dc28b0d59f5de554c2e531280ef54aeed58a23a2d34f0f55cfd9c1b83111",
+      "release_sha256": "1211dc28b0d59f5de554c2e531280ef54aeed58a23a2d34f0f55cfd9c1b83111",
+      "modified_for_release": false
+    },
+    {
+      "path": "board/qt_portable/qtcontrolhost_v6.exe",
+      "source": "co_project\\Final_pro\\QtControlHost_v6\\dist\\QtControlHost_v6_txt\\QtControlHost_v6.exe",
+      "source_sha256": "42a3f9889d73a9c2a69eb093ea1ccaf4fd14da9213d955346004fbe020e2a889",
+      "release_sha256": "42a3f9889d73a9c2a69eb093ea1ccaf4fd14da9213d955346004fbe020e2a889",
+      "modified_for_release": false
+    },
+    {
+      "path": "sim/historical_validation.md",
+      "source": "results\\task004\\validation.md",
+      "source_sha256": "c66e5d6e1193e79c336d5b07ec3b70cbb37f283ce0505db725050e012da4e07c",
+      "release_sha256": "c66e5d6e1193e79c336d5b07ec3b70cbb37f283ce0505db725050e012da4e07c",
+      "modified_for_release": false
+    },
+    {
+      "path": "board/historical_qspi/boot_test.log",
+      "source": "results\\task004\\qspi_programming\\boot_test.log",
+      "source_sha256": "756dacc3a72117d25d2bf0a90289bb0833f8563aefd939b9dae5b026065c678e",
+      "release_sha256": "756dacc3a72117d25d2bf0a90289bb0833f8563aefd939b9dae5b026065c678e",
+      "modified_for_release": false
+    },
+    {
+      "path": "board/historical_qspi/preflight.log",
+      "source": "results\\task004\\qspi_programming\\preflight.log",
+      "source_sha256": "360f079fc1f225bd07d93ab5f899e3e332ca6abc1b201e43dfec9f7f3f087bee",
+      "release_sha256": "360f079fc1f225bd07d93ab5f899e3e332ca6abc1b201e43dfec9f7f3f087bee",
+      "modified_for_release": false
+    },
+    {
+      "path": "board/historical_qspi/program.log",
+      "source": "results\\task004\\qspi_programming\\program.log",
+      "source_sha256": "7ba8721a001238accb3ac01282348c299cb86ab692f939cd8bd63848ff60772e",
+      "release_sha256": "7ba8721a001238accb3ac01282348c299cb86ab692f939cd8bd63848ff60772e",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/design_report.docx",
+      "source": "results\\task009\\amd_fpga_report_team_polished_20261030.docx",
+      "source_sha256": "23d269a95c877c3286114df9d098aa12c0401319842df7d1940060945c08e1e2",
+      "release_sha256": "23d269a95c877c3286114df9d098aa12c0401319842df7d1940060945c08e1e2",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/readme.md",
+      "source": "results\\task009\\submission_20261029\\skill\\readme.md",
+      "source_sha256": "4fce85b786478e553257c5a845d23fbc3d545c592def5ab49e17ea37b71aa318",
+      "release_sha256": "55467f1577450aeb2fcadc68ee33afb660d4e7d4581d9c70871efe0bf1714a12",
+      "modified_for_release": true
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/package-validation.json",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\package-validation.json",
+      "source_sha256": "d1748288b51715da09c925979d430b4cf7d3d9a51900265b607098da6e822c5f",
+      "release_sha256": "d1748288b51715da09c925979d430b4cf7d3d9a51900265b607098da6e822c5f",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/skill.md",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\skill.md",
+      "source_sha256": "e18d493378cb41af93a62754162d5170d0929d3b11e5877c337b67a64116be1f",
+      "release_sha256": "e18d493378cb41af93a62754162d5170d0929d3b11e5877c337b67a64116be1f",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/validation-history.json",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\validation-history.json",
+      "source_sha256": "c6c86c53f43213cfec8e6edefd9ce44ff18895eaadb6d08420e90709f79fc666",
+      "release_sha256": "c6c86c53f43213cfec8e6edefd9ce44ff18895eaadb6d08420e90709f79fc666",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/validation.json",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\validation.json",
+      "source_sha256": "270e13f8fabbfbda13d9e98e8116a6a8047e79f6524d749cabe00e851ba4d89d",
+      "release_sha256": "36a63b40c5269ae742e65ee8f579afa28a40e30f4fbeacbf8268c06b663721a3",
+      "modified_for_release": true
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/fixtures/build-boundary-bad.json",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\fixtures\\build-boundary-bad.json",
+      "source_sha256": "59700a30433c29a88b4040d68bb84108bffecf6ad495c6bf927096743577138d",
+      "release_sha256": "59700a30433c29a88b4040d68bb84108bffecf6ad495c6bf927096743577138d",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/fixtures/build-good.json",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\fixtures\\build-good.json",
+      "source_sha256": "b3d7f9dbcf64e81535cbcf35e46a6f39ea5ef272c23c7b82f17a5143751ba5c5",
+      "release_sha256": "b3d7f9dbcf64e81535cbcf35e46a6f39ea5ef272c23c7b82f17a5143751ba5c5",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/fixtures/build-hash-bad.json",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\fixtures\\build-hash-bad.json",
+      "source_sha256": "4ea2cd2920066d12ff19816bb1d04886fbfe918fb3b5accff8c71ea9429ba5a4",
+      "release_sha256": "4ea2cd2920066d12ff19816bb1d04886fbfe918fb3b5accff8c71ea9429ba5a4",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/fixtures/build-version-bad.json",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\fixtures\\build-version-bad.json",
+      "source_sha256": "784e54e5dabc8be570714bc01534b196a4afcc48675b10dc713aafdda9807751",
+      "release_sha256": "784e54e5dabc8be570714bc01534b196a4afcc48675b10dc713aafdda9807751",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/fixtures/image-fixture.bin",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\fixtures\\image-fixture.bin",
+      "source_sha256": "1c7b599d0ec7e61f47b934c8d4d16a220f48df15595d829b28924821b64e07e7",
+      "release_sha256": "1c7b599d0ec7e61f47b934c8d4d16a220f48df15595d829b28924821b64e07e7",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/fixtures/report-fixture.rpt",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\fixtures\\report-fixture.rpt",
+      "source_sha256": "74757f92fddc0accad673382f1dcfa2318c9531d3deceaba4f8ce1dc0d9264cb",
+      "release_sha256": "74757f92fddc0accad673382f1dcfa2318c9531d3deceaba4f8ce1dc0d9264cb",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/fixtures/txt-bad.txt",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\fixtures\\txt-bad.txt",
+      "source_sha256": "9a118d53bb6f9e92af2f074e3dc4e440a17c7a92263179108016380b277560bf",
+      "release_sha256": "9a118d53bb6f9e92af2f074e3dc4e440a17c7a92263179108016380b277560bf",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/fixtures/txt-good.txt",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\fixtures\\txt-good.txt",
+      "source_sha256": "01d839c48e14922c3176093c5958bb58cfcaca2cd08b10941b51be2b2148a24e",
+      "release_sha256": "01d839c48e14922c3176093c5958bb58cfcaca2cd08b10941b51be2b2148a24e",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/fixtures/txt-truncated.txt",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\fixtures\\txt-truncated.txt",
+      "source_sha256": "34a65bc6a30649da659f64852950267538bc48ff71b58c727376851a4290dcc8",
+      "release_sha256": "34a65bc6a30649da659f64852950267538bc48ff71b58c727376851a4290dcc8",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/fixtures/txt-wrap.txt",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\fixtures\\txt-wrap.txt",
+      "source_sha256": "3a9cfd548ad494205ab03762d83d85dd2f2c848312de008ae0f16b92426fb817",
+      "release_sha256": "3a9cfd548ad494205ab03762d83d85dd2f2c848312de008ae0f16b92426fb817",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/fixtures/udp-bad.jsonl",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\fixtures\\udp-bad.jsonl",
+      "source_sha256": "bba576f6b48c0745dc6c06263284b66d7f40be54ae2609b03219489d46fe76da",
+      "release_sha256": "bba576f6b48c0745dc6c06263284b66d7f40be54ae2609b03219489d46fe76da",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/fixtures/udp-observation.jsonl",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\fixtures\\udp-observation.jsonl",
+      "source_sha256": "5b0e9660dde1e6f6a46a3f1ed77fd2fc304683cf87282d3b97482a1c3def8725",
+      "release_sha256": "5b0e9660dde1e6f6a46a3f1ed77fd2fc304683cf87282d3b97482a1c3def8725",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/fixtures/udp-recovered.jsonl",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\fixtures\\udp-recovered.jsonl",
+      "source_sha256": "2bad93b1e72c83af57d96b9641357757371a2eb83d0a4a85cb63d5953352a352",
+      "release_sha256": "2bad93b1e72c83af57d96b9641357757371a2eb83d0a4a85cb63d5953352a352",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/references/adc-frame.md",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\references\\adc-frame.md",
+      "source_sha256": "13a349f3e79c5f141fb847a5ee1b658eb27c408354dbe005299fbc48a6adbebe",
+      "release_sha256": "13a349f3e79c5f141fb847a5ee1b658eb27c408354dbe005299fbc48a6adbebe",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/references/cdc-flash.md",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\references\\cdc-flash.md",
+      "source_sha256": "377e8ab3be36af426d07811da7c7a164d3f5fcfe70a551718c17ca565e96337b",
+      "release_sha256": "377e8ab3be36af426d07811da7c7a164d3f5fcfe70a551718c17ca565e96337b",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/references/udp-txt-build.md",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\references\\udp-txt-build.md",
+      "source_sha256": "80b89302f50ff279abb5cfcb05dcb0d475bee29eb110220f8547ac37411aee9f",
+      "release_sha256": "80b89302f50ff279abb5cfcb05dcb0d475bee29eb110220f8547ac37411aee9f",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/scripts/check_build.py",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\scripts\\check_build.py",
+      "source_sha256": "fcd3f4a96493d9911e3f1d7d4c4e1d44b4695e826c5cd4f61e6eba9902d7de83",
+      "release_sha256": "fcd3f4a96493d9911e3f1d7d4c4e1d44b4695e826c5cd4f61e6eba9902d7de83",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/scripts/check_txt.py",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\scripts\\check_txt.py",
+      "source_sha256": "5e5ec0e9a618e9f12f029182ecad7dd79ff480b70ad875f803ee9460610e3d46",
+      "release_sha256": "5e5ec0e9a618e9f12f029182ecad7dd79ff480b70ad875f803ee9460610e3d46",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/scripts/check_udp.py",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\scripts\\check_udp.py",
+      "source_sha256": "21d5564504bb33cb21b6a10e1582c13445c6f4eda8a447de5dde3899d007d2b2",
+      "release_sha256": "21d5564504bb33cb21b6a10e1582c13445c6f4eda8a447de5dde3899d007d2b2",
+      "modified_for_release": false
+    },
+    {
+      "path": "skill/fpga-acquisition-evidence/scripts/validate_examples.py",
+      "source": "results\\task009\\submission_20261029\\skill\\fpga-acquisition-evidence\\scripts\\validate_examples.py",
+      "source_sha256": "2677b48f31758d09654fe01caa1fa835f17b857bc0c7bed76084161e9bcdb703",
+      "release_sha256": "2677b48f31758d09654fe01caa1fa835f17b857bc0c7bed76084161e9bcdb703",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/ai_collaboration/ai_collaboration_record.docx",
+      "source": "results\\task009\\submission_20261029\\report\\ai_collaboration\\ai_collaboration_record.docx",
+      "source_sha256": "2255880393a9971a0e2a9e7f18e22aa0bcd43fac46aaba5048c2d0947a828abe",
+      "release_sha256": "2255880393a9971a0e2a9e7f18e22aa0bcd43fac46aaba5048c2d0947a828abe",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/ai_collaboration/collaboration_record.md",
+      "source": "results\\task009\\submission_20261029\\report\\ai_collaboration\\collaboration_record.md",
+      "source_sha256": "085edc43936f03aff0a2e60f2f199e1ebf54e3e6c94d3f1fd1486fe744f23680",
+      "release_sha256": "085edc43936f03aff0a2e60f2f199e1ebf54e3e6c94d3f1fd1486fe744f23680",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/ai_collaboration/dialogue_excerpts.jsonl",
+      "source": "results\\task009\\submission_20261029\\report\\ai_collaboration\\dialogue_excerpts.jsonl",
+      "source_sha256": "fc7e4722e068934a32ac4e0b1b8dd9298285c90b29b242bef697b2ce8030009d",
+      "release_sha256": "fc7e4722e068934a32ac4e0b1b8dd9298285c90b29b242bef697b2ce8030009d",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/ai_collaboration/dialogue_excerpts.md",
+      "source": "results\\task009\\submission_20261029\\report\\ai_collaboration\\dialogue_excerpts.md",
+      "source_sha256": "bfb962d84de8b15313ebfa1f580e9b4f3e63d814ff210b13fd75a2265c7f008e",
+      "release_sha256": "bfb962d84de8b15313ebfa1f580e9b4f3e63d814ff210b13fd75a2265c7f008e",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/ai_collaboration/engineering_index.json",
+      "source": "results\\task009\\submission_20261029\\report\\ai_collaboration\\engineering_index.json",
+      "source_sha256": "266e25fdda7e3faa7379108e9a4b004ad19ec52c5a684d41af950cccde7aac35",
+      "release_sha256": "266e25fdda7e3faa7379108e9a4b004ad19ec52c5a684d41af950cccde7aac35",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/ai_collaboration/source_index.json",
+      "source": "results\\task009\\submission_20261029\\report\\ai_collaboration\\source_index.json",
+      "source_sha256": "ce4679d2d9391985650254f94a7ded3163b5efa112730d19b891829e9070661b",
+      "release_sha256": "ce4679d2d9391985650254f94a7ded3163b5efa112730d19b891829e9070661b",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/ai_collaboration/source_validation.json",
+      "source": "results\\task009\\submission_20261029\\report\\ai_collaboration\\source_validation.json",
+      "source_sha256": "00299c5fd097fad54764a58828fc20e59e412853d35d35cde20096db79205ada",
+      "release_sha256": "00299c5fd097fad54764a58828fc20e59e412853d35d35cde20096db79205ada",
+      "modified_for_release": false
+    },
+    {
+      "path": "data/frames/config_250ksps.png",
+      "source": "results\\task009\\video_materials_20261029\\frames\\config_250ksps.png",
+      "source_sha256": "33dd958c3d290224e9cb5713bb95334fcc9b320a196a712905d33043b2faf274",
+      "release_sha256": "33dd958c3d290224e9cb5713bb95334fcc9b320a196a712905d33043b2faf274",
+      "modified_for_release": false
+    },
+    {
+      "path": "data/frames/config_500ksps.png",
+      "source": "results\\task009\\video_materials_20261029\\frames\\config_500ksps.png",
+      "source_sha256": "256fbb0c49205f2e81539ccbe784658199b68589f45a750c5c24da75b916389e",
+      "release_sha256": "256fbb0c49205f2e81539ccbe784658199b68589f45a750c5c24da75b916389e",
+      "modified_for_release": false
+    },
+    {
+      "path": "data/frames/group_2_response.png",
+      "source": "results\\task009\\video_materials_20261029\\frames\\group_2_response.png",
+      "source_sha256": "069a94197cd685892760b338f5b20ed16c3e2bd214d5a65251a51e040c700fae",
+      "release_sha256": "069a94197cd685892760b338f5b20ed16c3e2bd214d5a65251a51e040c700fae",
+      "modified_for_release": false
+    },
+    {
+      "path": "data/frames/group_3_response.png",
+      "source": "results\\task009\\video_materials_20261029\\frames\\group_3_response.png",
+      "source_sha256": "64db5daee871aff4d0b140f5a2a5c437a162b50da742970e567cdfbf19aeb5a8",
+      "release_sha256": "64db5daee871aff4d0b140f5a2a5c437a162b50da742970e567cdfbf19aeb5a8",
+      "modified_for_release": false
+    },
+    {
+      "path": "data/frames/restored_config.png",
+      "source": "results\\task009\\video_materials_20261029\\frames\\restored_config.png",
+      "source_sha256": "5ce125d808ab4b7dbc12ffe46b2d2b7ba55b1f62610637563ea8ead9e4431a2c",
+      "release_sha256": "5ce125d808ab4b7dbc12ffe46b2d2b7ba55b1f62610637563ea8ead9e4431a2c",
+      "modified_for_release": false
+    },
+    {
+      "path": "data/frames/restored_full_config.png",
+      "source": "results\\task009\\video_materials_20261029\\frames\\restored_full_config.png",
+      "source_sha256": "23a9c1c370c8dfecb12cc76fd5f5d98faf27c3ac7824ac7a2485666218a91b0a",
+      "release_sha256": "23a9c1c370c8dfecb12cc76fd5f5d98faf27c3ac7824ac7a2485666218a91b0a",
+      "modified_for_release": false
+    },
+    {
+      "path": "data/frames/run_1000ksps.png",
+      "source": "results\\task009\\video_materials_20261029\\frames\\run_1000ksps.png",
+      "source_sha256": "c3784dbb8247ccda87860927054a7bedc0aed099e7af70637bc658b3ffdeea84",
+      "release_sha256": "c3784dbb8247ccda87860927054a7bedc0aed099e7af70637bc658b3ffdeea84",
+      "modified_for_release": false
+    },
+    {
+      "path": "data/frames/run_250ksps.png",
+      "source": "results\\task009\\video_materials_20261029\\frames\\run_250ksps.png",
+      "source_sha256": "f36c437d0d78b17410b104c73933bba0c11e7a10cbf7e25975b1f8be78dcd6f9",
+      "release_sha256": "f36c437d0d78b17410b104c73933bba0c11e7a10cbf7e25975b1f8be78dcd6f9",
+      "modified_for_release": false
+    },
+    {
+      "path": "data/frames/run_500ksps.png",
+      "source": "results\\task009\\video_materials_20261029\\frames\\run_500ksps.png",
+      "source_sha256": "43d64b6e47c9ec7c2e73297d6fb12600dda0cbd675286de88f9db9785bdb7713",
+      "release_sha256": "43d64b6e47c9ec7c2e73297d6fb12600dda0cbd675286de88f9db9785bdb7713",
+      "modified_for_release": false
+    },
+    {
+      "path": "data/frames/saved_config.png",
+      "source": "results\\task009\\video_materials_20261029\\frames\\saved_config.png",
+      "source_sha256": "de2feedab85dfdbd5b3168c4aef2a168a8fca0ab272f1741dbf110704619d59e",
+      "release_sha256": "de2feedab85dfdbd5b3168c4aef2a168a8fca0ab272f1741dbf110704619d59e",
+      "modified_for_release": false
+    },
+    {
+      "path": "data/frames/txt_content_left.png",
+      "source": "results\\task009\\video_materials_20261029\\frames\\txt_content_left.png",
+      "source_sha256": "c8e491fbe9dc280287eb429fcd30bf0d192227cfc77d2a90f2f7d3205927512a",
+      "release_sha256": "c8e491fbe9dc280287eb429fcd30bf0d192227cfc77d2a90f2f7d3205927512a",
+      "modified_for_release": false
+    },
+    {
+      "path": "data/frames/txt_content_middle.png",
+      "source": "results\\task009\\video_materials_20261029\\frames\\txt_content_middle.png",
+      "source_sha256": "5e4234fa4753aa64f4813d19b47ccb231e79e000b84bd2a4f4cc2dcb2df24e36",
+      "release_sha256": "5e4234fa4753aa64f4813d19b47ccb231e79e000b84bd2a4f4cc2dcb2df24e36",
+      "modified_for_release": false
+    },
+    {
+      "path": "data/frames/txt_recording.png",
+      "source": "results\\task009\\video_materials_20261029\\frames\\txt_recording.png",
+      "source_sha256": "185c996bb8420061adfc6c6599f18f6f1d2b4b1cde35730a04f01cfd19ed74b7",
+      "release_sha256": "185c996bb8420061adfc6c6599f18f6f1d2b4b1cde35730a04f01cfd19ed74b7",
+      "modified_for_release": false
+    },
+    {
+      "path": "data/photos/board_connected.jpg",
+      "source": "results\\task009\\video_materials_20261029\\photos\\board_connected.jpg",
+      "source_sha256": "c03838037b58cde6bdb6f13de821fa43c94d6ecae89a62abc8e5b994033f4b28",
+      "release_sha256": "c03838037b58cde6bdb6f13de821fa43c94d6ecae89a62abc8e5b994033f4b28",
+      "modified_for_release": false
+    },
+    {
+      "path": "data/photos/instrument_and_board.jpg",
+      "source": "results\\task009\\video_materials_20261029\\photos\\instrument_and_board.jpg",
+      "source_sha256": "7b041edda81fd98eceb7b5cac96e8afb66385a86538386067d9786c28476410c",
+      "release_sha256": "7b041edda81fd98eceb7b5cac96e8afb66385a86538386067d9786c28476410c",
+      "modified_for_release": false
+    },
+    {
+      "path": "data/frame_index.json",
+      "source": "results\\task009\\video_materials_20261029\\frame_index.json",
+      "source_sha256": "b1251800523479481a25f50bb5d3993094eafbf0db62cd8e1ece920b5db8ef62",
+      "release_sha256": "b1251800523479481a25f50bb5d3993094eafbf0db62cd8e1ece920b5db8ef62",
+      "modified_for_release": false
+    },
+    {
+      "path": "data/txt_prefix_checks.json",
+      "source": "results\\task009\\video_materials_20261029\\txt_prefix_checks.json",
+      "source_sha256": "f9779eaa9071258b8b87b1a052a961e95865d9e0d1232e5de53f65de7c9b2976",
+      "release_sha256": "f9779eaa9071258b8b87b1a052a961e95865d9e0d1232e5de53f65de7c9b2976",
+      "modified_for_release": false
+    },
+    {
+      "path": "data/source_index.json",
+      "source": "results\\task009\\video_materials_20261029\\source_index.json",
+      "source_sha256": "5fe9777bb81ea5c73ebd4811145bffd2064a219e0b74c495de9aa87ff90031d6",
+      "release_sha256": "5fe9777bb81ea5c73ebd4811145bffd2064a219e0b74c495de9aa87ff90031d6",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/edit_decision_list.json",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\edit_decision_list.json",
+      "source_sha256": "a37e1dc0136e8c131890addf5c838351ebbba8df667d6791360eaf028879d3a1",
+      "release_sha256": "a37e1dc0136e8c131890addf5c838351ebbba8df667d6791360eaf028879d3a1",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/frame_index.json",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\frame_index.json",
+      "source_sha256": "b1251800523479481a25f50bb5d3993094eafbf0db62cd8e1ece920b5db8ef62",
+      "release_sha256": "b1251800523479481a25f50bb5d3993094eafbf0db62cd8e1ece920b5db8ef62",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/gallery.md",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\gallery.md",
+      "source_sha256": "789812acb576ab79b65084ba4aab69864e4da50c2754ff09320f48661b495c8d",
+      "release_sha256": "789812acb576ab79b65084ba4aab69864e4da50c2754ff09320f48661b495c8d",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/photo_sources.json",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\photo_sources.json",
+      "source_sha256": "8e003e5dc62867ed7f4cd41a6a5279c5f21dbc849cc8918f6653f5fbc39de181",
+      "release_sha256": "8e003e5dc62867ed7f4cd41a6a5279c5f21dbc849cc8918f6653f5fbc39de181",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/photo_status.md",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\photo_status.md",
+      "source_sha256": "2148a6e62d2852477654016428b8164b7bf2e1894977830af723b99f75a3cfe7",
+      "release_sha256": "2148a6e62d2852477654016428b8164b7bf2e1894977830af723b99f75a3cfe7",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/review_notes.md",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\review_notes.md",
+      "source_sha256": "cfdb9e6f2d43ddb141566161a89f930d7d62a1ef80aaf3415097079b2e63101a",
+      "release_sha256": "cfdb9e6f2d43ddb141566161a89f930d7d62a1ef80aaf3415097079b2e63101a",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/source_index.json",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\source_index.json",
+      "source_sha256": "5fe9777bb81ea5c73ebd4811145bffd2064a219e0b74c495de9aa87ff90031d6",
+      "release_sha256": "5fe9777bb81ea5c73ebd4811145bffd2064a219e0b74c495de9aa87ff90031d6",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/txt_prefix_checks.json",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\txt_prefix_checks.json",
+      "source_sha256": "f9779eaa9071258b8b87b1a052a961e95865d9e0d1232e5de53f65de7c9b2976",
+      "release_sha256": "f9779eaa9071258b8b87b1a052a961e95865d9e0d1232e5de53f65de7c9b2976",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/frames/config_250ksps.png",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\frames\\config_250ksps.png",
+      "source_sha256": "33dd958c3d290224e9cb5713bb95334fcc9b320a196a712905d33043b2faf274",
+      "release_sha256": "33dd958c3d290224e9cb5713bb95334fcc9b320a196a712905d33043b2faf274",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/frames/config_500ksps.png",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\frames\\config_500ksps.png",
+      "source_sha256": "256fbb0c49205f2e81539ccbe784658199b68589f45a750c5c24da75b916389e",
+      "release_sha256": "256fbb0c49205f2e81539ccbe784658199b68589f45a750c5c24da75b916389e",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/frames/group_2_response.png",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\frames\\group_2_response.png",
+      "source_sha256": "069a94197cd685892760b338f5b20ed16c3e2bd214d5a65251a51e040c700fae",
+      "release_sha256": "069a94197cd685892760b338f5b20ed16c3e2bd214d5a65251a51e040c700fae",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/frames/group_3_response.png",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\frames\\group_3_response.png",
+      "source_sha256": "64db5daee871aff4d0b140f5a2a5c437a162b50da742970e567cdfbf19aeb5a8",
+      "release_sha256": "64db5daee871aff4d0b140f5a2a5c437a162b50da742970e567cdfbf19aeb5a8",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/frames/restored_config.png",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\frames\\restored_config.png",
+      "source_sha256": "5ce125d808ab4b7dbc12ffe46b2d2b7ba55b1f62610637563ea8ead9e4431a2c",
+      "release_sha256": "5ce125d808ab4b7dbc12ffe46b2d2b7ba55b1f62610637563ea8ead9e4431a2c",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/frames/restored_full_config.png",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\frames\\restored_full_config.png",
+      "source_sha256": "23a9c1c370c8dfecb12cc76fd5f5d98faf27c3ac7824ac7a2485666218a91b0a",
+      "release_sha256": "23a9c1c370c8dfecb12cc76fd5f5d98faf27c3ac7824ac7a2485666218a91b0a",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/frames/run_1000ksps.png",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\frames\\run_1000ksps.png",
+      "source_sha256": "c3784dbb8247ccda87860927054a7bedc0aed099e7af70637bc658b3ffdeea84",
+      "release_sha256": "c3784dbb8247ccda87860927054a7bedc0aed099e7af70637bc658b3ffdeea84",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/frames/run_250ksps.png",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\frames\\run_250ksps.png",
+      "source_sha256": "f36c437d0d78b17410b104c73933bba0c11e7a10cbf7e25975b1f8be78dcd6f9",
+      "release_sha256": "f36c437d0d78b17410b104c73933bba0c11e7a10cbf7e25975b1f8be78dcd6f9",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/frames/run_500ksps.png",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\frames\\run_500ksps.png",
+      "source_sha256": "43d64b6e47c9ec7c2e73297d6fb12600dda0cbd675286de88f9db9785bdb7713",
+      "release_sha256": "43d64b6e47c9ec7c2e73297d6fb12600dda0cbd675286de88f9db9785bdb7713",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/frames/saved_config.png",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\frames\\saved_config.png",
+      "source_sha256": "de2feedab85dfdbd5b3168c4aef2a168a8fca0ab272f1741dbf110704619d59e",
+      "release_sha256": "de2feedab85dfdbd5b3168c4aef2a168a8fca0ab272f1741dbf110704619d59e",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/frames/txt_content_left.png",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\frames\\txt_content_left.png",
+      "source_sha256": "c8e491fbe9dc280287eb429fcd30bf0d192227cfc77d2a90f2f7d3205927512a",
+      "release_sha256": "c8e491fbe9dc280287eb429fcd30bf0d192227cfc77d2a90f2f7d3205927512a",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/frames/txt_content_middle.png",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\frames\\txt_content_middle.png",
+      "source_sha256": "5e4234fa4753aa64f4813d19b47ccb231e79e000b84bd2a4f4cc2dcb2df24e36",
+      "release_sha256": "5e4234fa4753aa64f4813d19b47ccb231e79e000b84bd2a4f4cc2dcb2df24e36",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/frames/txt_recording.png",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\frames\\txt_recording.png",
+      "source_sha256": "185c996bb8420061adfc6c6599f18f6f1d2b4b1cde35730a04f01cfd19ed74b7",
+      "release_sha256": "185c996bb8420061adfc6c6599f18f6f1d2b4b1cde35730a04f01cfd19ed74b7",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/photos/board_connected.jpg",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\photos\\board_connected.jpg",
+      "source_sha256": "c03838037b58cde6bdb6f13de821fa43c94d6ecae89a62abc8e5b994033f4b28",
+      "release_sha256": "c03838037b58cde6bdb6f13de821fa43c94d6ecae89a62abc8e5b994033f4b28",
+      "modified_for_release": false
+    },
+    {
+      "path": "report/field_validation/photos/instrument_and_board.jpg",
+      "source": "results\\task009\\submission_20261029\\report\\field_validation\\photos\\instrument_and_board.jpg",
+      "source_sha256": "7b041edda81fd98eceb7b5cac96e8afb66385a86538386067d9786c28476410c",
+      "release_sha256": "7b041edda81fd98eceb7b5cac96e8afb66385a86538386067d9786c28476410c",
+      "modified_for_release": false
+    }
+  ],
+  "runtime_original": "D:\\fpga+stm32_project\\co_project\\Final_pro\\QtControlHost_v6\\dist\\QtControlHost_v6_txt",
+  "portable_exe_sha256": "42a3f9889d73a9c2a69eb093ea1ccaf4fd14da9213d955346004fbe020e2a889",
+  "note": "Source hashes describe original inputs. Release hashes describe the distributed bytes; portable script paths, readme instructions, generated XPR and rerun validation outputs may differ. RTL, C++, tests, CMake source and validated bitstreams/portable EXE remain byte-identical."
+}

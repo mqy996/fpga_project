@@ -1,0 +1,36 @@
+{
+  "build_id": "synthetic-fixture-only",
+  "partitions": [
+    {
+      "name": "boot",
+      "start": "0x0",
+      "end_exclusive": "0x800000"
+    },
+    {
+      "name": "params",
+      "start": "0x800000",
+      "end_exclusive": "0x1000000"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "image-fixture.bin",
+      "kind": "raw_image",
+      "sha256": "1c7b599d0ec7e61f47b934c8d4d16a220f48df15595d829b28924821b64e07e7",
+      "size_bytes": 16,
+      "start": "0x0",
+      "partition": "boot"
+    },
+    {
+      "path": "report-fixture.rpt",
+      "kind": "report",
+      "sha256": "74757f92fddc0accad673382f1dcfa2318c9531d3deceaba4f8ce1dc0d9264cb",
+      "expected_headers": {
+        "Tool Version": "Vivado v.2025.2 (synthetic)",
+        "Design": "fixture_top",
+        "Device": "fixture_device",
+        "Design State": "Routed"
+      }
+    }
+  ]
+}

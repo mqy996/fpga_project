@@ -1,0 +1,18 @@
+[
+  {
+    "path": "C:\\Users\\25651\\Documents\\WeChat Files\\wxid_6ushi6up1okq22\\FileStorage\\Temp\\afa3a41c02ba18b34a074fce425149a.jpg",
+    "copy": "photos\\board_connected.jpg",
+    "sha256": "c03838037b58cde6bdb6f13de821fa43c94d6ecae89a62abc8e5b994033f4b28",
+    "bytes_identical": true,
+    "original_exists_at_finalization": false,
+    "finalization_check": "copy matches captured source SHA256; original temporary path no longer available"
+  },
+  {
+    "path": "C:\\Users\\25651\\Documents\\WeChat Files\\wxid_6ushi6up1okq22\\FileStorage\\Temp\\2a868392f7832f0e48ba47100b7c841.jpg",
+    "copy": "photos\\instrument_and_board.jpg",
+    "sha256": "7b041edda81fd98eceb7b5cac96e8afb66385a86538386067d9786c28476410c",
+    "bytes_identical": true,
+    "original_exists_at_finalization": false,
+    "finalization_check": "copy matches captured source SHA256; original temporary path no longer available"
+  }
+]

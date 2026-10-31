@@ -1,0 +1,71 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Sat Oct 10 14:23:54 2026
+| Host         : mqy996 running 64-bit major release  (build 9200)
+| Command      : report_drc -file D:/fpga+stm32_project/results/task004/final_bitstream/20261010_141613/drc.rpt
+| Design       : fpga_adc_udp_flash_param_top
+| Device       : xc7a100tcsg324-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: fpga_adc_udp_flash_param_top
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 5
++-----------+----------+--------------------------+--------+
+| Rule      | Severity | Description              | Checks |
++-----------+----------+--------------------------+--------+
+| BUFC-1    | Warning  | Input Buffer Connections | 3      |
+| PLCK-12   | Warning  | Clock Placer Checks      | 1      |
+| RTSTAT-10 | Warning  | No routable loads        | 1      |
++-----------+----------+--------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+BUFC-1#1 Warning
+Input Buffer Connections  
+Input buffer g_flash_runtime.u_flash_dq0/IBUF (in g_flash_runtime.u_flash_dq0 macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#2 Warning
+Input Buffer Connections  
+Input buffer g_flash_runtime.u_flash_dq2/IBUF (in g_flash_runtime.u_flash_dq2 macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#3 Warning
+Input Buffer Connections  
+Input buffer g_flash_runtime.u_flash_dq3/IBUF (in g_flash_runtime.u_flash_dq3 macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+PLCK-12#1 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	rgmii_rxc_IBUF_inst (IBUF.O) is locked to T11
+	u_network/u_rx/g_hw_capture.u_rxc_bufg (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y1
+
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+15 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_flash_error_code[3], dbg_flash_error_code[4], dbg_flash_error_code[5],
+dbg_flash_error_code[6], dbg_flash_error_code[7]
+u_network/u_sample_fifo/u_fifo/gnuram_async_fifo.xpm_fifo_base_inst/wr_data_count[9:0].
+Related violations: <none>
+
+

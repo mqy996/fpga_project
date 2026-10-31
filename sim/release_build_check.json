@@ -1,0 +1,59 @@
+{
+  "ok": true,
+  "build_id": "task004_20261010_141613_validated_release",
+  "checks": [
+    {
+      "path": "../fpga/bitstream/fpga_adc_udp_flash_param_rate.bin",
+      "kind": "raw_image",
+      "size_bytes": 1893212,
+      "sha256": "a236fd5fd5810ea9c91df48887a6dfaa13f5e3a07b9068dcc0be96ac1e086863",
+      "errors": [],
+      "range": {
+        "start": "0x0",
+        "end_exclusive": "0x1ce35c",
+        "partition": "boot"
+      },
+      "ok": true
+    },
+    {
+      "path": "../fpga/bitstream/fpga_adc_udp_flash_param_rate.bit",
+      "kind": "file",
+      "size_bytes": 1893367,
+      "sha256": "340db5026f4312bfd3241ec9b73359a9f777f1614dc8bf67c5f3683dbaf98307",
+      "errors": [],
+      "ok": true
+    },
+    {
+      "path": "../fpga/bitstream/fpga_adc_udp_flash_param_rate.mcs",
+      "kind": "file",
+      "size_bytes": 5325168,
+      "sha256": "cb4b147c653f62511433a51a0786698b06314ad8c03ed1fe2ae81061554894dd",
+      "errors": [],
+      "ok": true
+    },
+    {
+      "path": "../fpga/reports/timing_summary.rpt",
+      "kind": "report",
+      "size_bytes": 208636,
+      "sha256": "ff80193f1be739c3765139085dc7650b8eceba139b6e657d1e5a045c86b2ef3e",
+      "errors": [],
+      "observed_headers": {
+        "Tool Version": "Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025",
+        "Date": "Sat Oct 10 14:23:47 2026",
+        "Host": "mqy996 running 64-bit major release  (build 9200)",
+        "Command": "report_timing_summary -delay_type min_max -report_unconstrained -file D:/fpga+stm32_project/results/task004/final_bitstream/20261010_141613/timing_summary.rpt",
+        "Design": "fpga_adc_udp_flash_param_top",
+        "Device": "7a100t-csg324",
+        "Speed File": "-2  PRODUCTION 1.23 2018-06-13",
+        "Design State": "Routed"
+      },
+      "ok": true
+    }
+  ],
+  "limits": [
+    "manifest expectations must come from the intended release, not the files being checked",
+    "matching hashes/headers do not prove common synthesis provenance or hardware acceptance",
+    "image bounds do not inspect programming erase policy, MCS addressing or A/B record CRC",
+    "positive WNS or Routed alone does not establish complete I/O constraints or zero DRC warnings"
+  ]
+}

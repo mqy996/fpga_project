@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat Oct 10 14:36:32 2026
+# Process ID         : 11060
+# Current directory  : D:/fpga+stm32_project
+# Command line       : vivado.exe -mode batch -notrace -log D:\fpga+stm32_project\results\task004\qspi_programming\program.log -journal D:\fpga+stm32_project\results\task004\qspi_programming\program.jou -source D:\fpga+stm32_project\co_project\Final_pro\ADC_transmission_flash_param_rate_project_clean\scripts\program_bitstream_preserve_params.tcl -tclargs D:\fpga+stm32_project\results\task004\final_bitstream\20261010_141613\fpga_adc_udp_flash_param_rate.bin
+# Log file           : D:/fpga+stm32_project/results/task004/qspi_programming/program.log
+# Journal file       : D:\fpga+stm32_project\results\task004\qspi_programming\program.jou
+# Running On         : mqy996
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 5800H with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 17020 MB
+# Swap memory        : 25165 MB
+# Total Virtual      : 42186 MB
+# Available Virtual  : 19889 MB
+#-----------------------------------------------------------
+source {D:\fpga+stm32_project\co_project\Final_pro\ADC_transmission_flash_param_rate_project_clean\scripts\program_bitstream_preserve_params.tcl} -notrace
+SAFE: D:/fpga+stm32_project/results/task004/final_bitstream/20261010_141613/fpga_adc_udp_flash_param_rate.bin, exclusive end 0x1CE35C
+open_hw_manager: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 515.043 ; gain = 214.621
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2025.1
+  **** Build date : May  6 2025 at 09:15:36
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2025.1.0
+  ****** Build date   : May 14 2025-03:15:27
+    **** Build number : 2025.1.1747163727
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 518.980 ; gain = 3.938
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+Mfg ID : ef   Memory Type : 40   Memory Capacity : 18   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:00 ; elapsed = 00:00:49 . Memory (MB): peak = 576.777 ; gain = 1.809
+PASS: programmed 1893212 bytes below 0x800000; parameter A/B sectors were outside PROGRAM.ADDRESS_RANGE.
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 10 14:37:55 2026...

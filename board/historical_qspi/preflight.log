@@ -1,0 +1,67 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat Oct 10 14:35:25 2026
+# Process ID         : 28100
+# Current directory  : D:/fpga+stm32_project
+# Command line       : vivado.exe -mode batch -notrace -log D:\fpga+stm32_project\results\task004\qspi_programming\preflight.log -journal D:\fpga+stm32_project\results\task004\qspi_programming\preflight.jou -source D:\fpga+stm32_project\results\task004\qspi_programming\preflight.tcl
+# Log file           : D:/fpga+stm32_project/results/task004/qspi_programming/preflight.log
+# Journal file       : D:\fpga+stm32_project\results\task004\qspi_programming\preflight.jou
+# Running On         : mqy996
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 5800H with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 17020 MB
+# Swap memory        : 25165 MB
+# Total Virtual      : 42186 MB
+# Available Virtual  : 20292 MB
+#-----------------------------------------------------------
+source {D:\fpga+stm32_project\results\task004\qspi_programming\preflight.tcl} -notrace
+PREFLIGHT_VERSION=2025.1
+open_hw_manager: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 513.621 ; gain = 213.512
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2025.1
+  **** Build date : May  6 2025 at 09:15:36
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2025.1.0
+  ****** Build date   : May 14 2025-03:15:27
+    **** Build number : 2025.1.1747163727
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 520.594 ; gain = 6.973
+HW_SERVERS=localhost:3121
+HW_TARGETS=localhost:3121/xilinx_tcf/Digilent/210512180081
+TARGET_NAME=localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+FPGA_DEVICE=xc7a100t_0
+FPGA_IDCODE=00010011011000110001000010010011
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+REGISTER.IR.BIT5_DONE=1
+REGISTER.STATUS.INIT_B=unavailable
+REGISTER.STATUS.DONE=unavailable
+REGISTER.CONFIG_STATUS.M0=unavailable
+REGISTER.CONFIG_STATUS.M1=unavailable
+REGISTER.CONFIG_STATUS.M2=unavailable
+PREFLIGHT_PASS
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 10 14:35:57 2026...

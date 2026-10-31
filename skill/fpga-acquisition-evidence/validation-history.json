@@ -1,0 +1,12 @@
+{
+  "initial_generated_at_utc": "2026-10-22T12:30:59.022245+00:00",
+  "initial_cases": 22,
+  "initial_passed": 20,
+  "failed_cases": [
+    "build-good",
+    "build-wrong-tool-version"
+  ],
+  "observed_failure": "Synthetic report file was written with Windows CRLF; fixture manifest used the pre-write LF text SHA256. The checker correctly reported sha256 mismatch.",
+  "correction": "Pin the fixture report checksum from its actual on-disk bytes. Do not normalize a report before verifying release hashes.",
+  "scope": "Fixture construction correction only; no FPGA/Qt/hardware run."
+}

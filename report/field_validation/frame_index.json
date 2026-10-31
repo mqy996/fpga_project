@@ -1,0 +1,106 @@
+[
+  {
+    "file": "frames/config_500ksps.png",
+    "source": "screen",
+    "seconds": 40,
+    "caption": "500kSPS，24路，30组/包，READY",
+    "sha256": "256fbb0c49205f2e81539ccbe784658199b68589f45a750c5c24da75b916389e",
+    "transform": "decoded original full video frame, no crop or content edit"
+  },
+  {
+    "file": "frames/run_500ksps.png",
+    "source": "screen",
+    "seconds": 136,
+    "caption": "500kSPS运行；当前放大CH00～03，四路周期波形清晰",
+    "sha256": "43d64b6e47c9ec7c2e73297d6fb12600dda0cbd675286de88f9db9785bdb7713",
+    "transform": "decoded original full video frame, no crop or content edit"
+  },
+  {
+    "file": "frames/config_250ksps.png",
+    "source": "screen",
+    "seconds": 235,
+    "caption": "250kSPS配置页，READY",
+    "sha256": "33dd958c3d290224e9cb5713bb95334fcc9b320a196a712905d33043b2faf274",
+    "transform": "decoded original full video frame, no crop or content edit"
+  },
+  {
+    "file": "frames/run_250ksps.png",
+    "source": "screen",
+    "seconds": 250,
+    "caption": "250kSPS运行及计数",
+    "sha256": "f36c437d0d78b17410b104c73933bba0c11e7a10cbf7e25975b1f8be78dcd6f9",
+    "transform": "decoded original full video frame, no crop or content edit"
+  },
+  {
+    "file": "frames/run_1000ksps.png",
+    "source": "screen",
+    "seconds": 280,
+    "caption": "1MSPS短时运行片段，不能单凭此帧声称持续稳定",
+    "sha256": "c3784dbb8247ccda87860927054a7bedc0aed099e7af70637bc658b3ffdeea84",
+    "transform": "decoded original full video frame, no crop or content edit"
+  },
+  {
+    "file": "frames/saved_config.png",
+    "source": "screen",
+    "seconds": 480,
+    "caption": "保存成功；500kSPS，22路上传，28组/包，Sequence=7",
+    "sha256": "de2feedab85dfdbd5b3168c4aef2a168a8fca0ab272f1741dbf110704619d59e",
+    "transform": "decoded original full video frame, no crop or content edit"
+  },
+  {
+    "file": "frames/restored_config.png",
+    "source": "screen",
+    "seconds": 510,
+    "caption": "读回来源Flash，Sequence=7，500kSPS/22路/28组",
+    "sha256": "5ce125d808ab4b7dbc12ffe46b2d2b7ba55b1f62610637563ea8ead9e4431a2c",
+    "transform": "decoded original full video frame, no crop or content edit"
+  },
+  {
+    "file": "frames/restored_full_config.png",
+    "source": "screen",
+    "seconds": 605,
+    "caption": "后续恢复24路/500kSPS/30组配置",
+    "sha256": "23a9c1c370c8dfecb12cc76fd5f5d98faf27c3ac7824ac7a2485666218a91b0a",
+    "transform": "decoded original full video frame, no crop or content edit"
+  },
+  {
+    "file": "frames/group_2_response.png",
+    "source": "screen",
+    "seconds": 705,
+    "caption": "当前可见CH13～15正弦，CH16未接信号",
+    "sha256": "069a94197cd685892760b338f5b20ed16c3e2bd214d5a65251a51e040c700fae",
+    "transform": "decoded original full video frame, no crop or content edit"
+  },
+  {
+    "file": "frames/group_3_response.png",
+    "source": "screen",
+    "seconds": 745,
+    "caption": "当前可见CH18～21正弦，需其他视角覆盖其余通道",
+    "sha256": "64db5daee871aff4d0b140f5a2a5c437a162b50da742970e567cdfbf19aeb5a8",
+    "transform": "decoded original full video frame, no crop or content edit"
+  },
+  {
+    "file": "frames/txt_recording.png",
+    "source": "screen",
+    "seconds": 760,
+    "caption": "24路TXT记录勾选及停止过程",
+    "sha256": "185c996bb8420061adfc6c6599f18f6f1d2b4b1cde35730a04f01cfd19ed74b7",
+    "transform": "decoded original full video frame, no crop or content edit"
+  },
+  {
+    "file": "frames/txt_content_left.png",
+    "source": "screen",
+    "seconds": 800,
+    "caption": "实际TXT文件表头/时间/码值电压",
+    "sha256": "c8e491fbe9dc280287eb429fcd30bf0d192227cfc77d2a90f2f7d3205927512a",
+    "transform": "decoded original full video frame, no crop or content edit"
+  },
+  {
+    "file": "frames/txt_content_middle.png",
+    "source": "screen",
+    "seconds": 795,
+    "caption": "同一TXT横向滚动展示CH08起的数据",
+    "sha256": "5e4234fa4753aa64f4813d19b47ccb231e79e000b84bd2a4f4cc2dcb2df24e36",
+    "transform": "decoded original full video frame, no crop or content edit"
+  }
+]

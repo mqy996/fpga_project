@@ -1,0 +1,430 @@
+[
+  {
+    "evidence_id": "e1",
+    "repository_path": "results/task003/channel_mapping_result.md",
+    "file_sha256": "cc2700d84c6204bd41a3cf3b40bbd49c1b9bcc94f558f35a485de98ab268d1c8",
+    "purpose": "Historical mapping and human retest; not new measurements",
+    "lines": [
+      {
+        "line": 5,
+        "text": "实测中，给板上所称的 ADC1 第 1 路加约 +5 V 后，Qt 的第七行 `CH06` 稳定显示该信号。Vivado ILA 进一步在 FPGA 的 ADC1 原始并行数据总线上看到约 +5 V 的码值出现在读取计数 `channel_index=6` 时。因此，偏移已发生在 Qt 拆包之前，Qt 的通道标签/数据顺序不是这次错位的来源。"
+      },
+      {
+        "line": 6,
+        "text": ""
+      },
+      {
+        "line": 7,
+        "text": "当前证据把问题定位在板级输入映射或 FPGA/ADC 读序对齐环节，尚不能仅凭这次采集断定 PCB 一定接错。最终工程 RTL 没有采样 AD7606C 的 `FRSTDATA`；下一步应核对物理接线并用 `FRSTDATA` 确认每帧第一个并行字，区分“端子接到 V7”与“FPGA 从非 V1 字开始读”。"
+      },
+      {
+        "line": 8,
+        "text": ""
+      },
+      {
+        "line": 9,
+        "text": "注意：UI/UDP 标签从 `CH00` 开始计数。用户所说的“第七个通道”在当前 UI 中是第七行 `CH06`，不是标签 `CH07`（第八行）。"
+      },
+      {
+        "line": 10,
+        "text": ""
+      },
+      {
+        "line": 11,
+        "text": "## 最终复测（2026-10-10）"
+      },
+      {
+        "line": 12,
+        "text": ""
+      },
+      {
+        "line": 13,
+        "text": "任务 004 的流水帧对齐/FRSTDATA 修复镜像写入 QSPI 并从 QSPI 重新配置后，用户逐个测试通道，确认软件显示顺序与实际输入顺序一致。由旧版 `CH06` 偏移到修复后顺序正确，符合“帧起点错位已修正”的判断；本次没有重新采集同步的 FRSTDATA、RD、BUSY 波形，因此这里记录的是用户确认的最终功能结果，不声称新增了独立的底层波形证据。"
+      }
+    ]
+  },
+  {
+    "evidence_id": "e2",
+    "repository_path": "results/task004/validation.md",
+    "file_sha256": "c66e5d6e1193e79c336d5b07ec3b70cbb37f283ce0505db725050e012da4e07c",
+    "purpose": "Historical targeted simulation summary",
+    "lines": [
+      {
+        "line": 5,
+        "text": "- 工具：本机 Vivado Simulator 2025.1（`xvlog` → `xelab` → `xsim`）。"
+      },
+      {
+        "line": 6,
+        "text": "- 命令：`powershell -ExecutionPolicy Bypass -File .\\co_project\\Final_pro\\ADC_transmission_flash_param_rate_project_clean\\scripts\\run_ad7606c_pipeline_sim.ps1`"
+      },
+      {
+        "line": 7,
+        "text": "- 正常帧测试通过：12 帧连续 1 MSPS 采集，BUSY 高电平模型为 21 个 32 MHz 时钟。每帧八个唯一数据字按 V1～V8 顺序进入缓冲，FRSTDATA 标记正确；CONVST 与 `sample_valid` 间隔均为 32 个时钟。"
+      },
+      {
+        "line": 8,
+        "text": "- 读时序余量：最后一个 RD 下降沿至少早于下一次 BUSY 下降 7 个时钟（约 219 ns），超过数据手册要求的 25 ns。"
+      },
+      {
+        "line": 9,
+        "text": "- 错位拒收测试通过：首字 FRSTDATA 故意为低后，控制器进入错误状态，不产生 `sample_valid`，也不会将该帧交给上层。"
+      },
+      {
+        "line": 10,
+        "text": ""
+      }
+    ]
+  },
+  {
+    "evidence_id": "e3",
+    "repository_path": "results/task004/validation.md",
+    "file_sha256": "c66e5d6e1193e79c336d5b07ec3b70cbb37f283ce0505db725050e012da4e07c",
+    "purpose": "Historical implementation results and pin mapping",
+    "lines": [
+      {
+        "line": 14,
+        "text": "- 流程：RTL 综合 → 优化 → 布局 → 物理优化 → 布线 → 报告 → bitgen → BIN/MCS 配置镜像边界检查。完整输出目录：`D:\\fpga+stm32_project\\results\\task004\\final_bitstream\\20261010_141613\\`。"
+      },
+      {
+        "line": 15,
+        "text": "- 最终时序：WNS=`+0.217 ns`、TNS=`0`、WHS=`+0.046 ns`、THS=`0`；Vivado 报告 `All user specified timing constraints are met.`"
+      },
+      {
+        "line": 16,
+        "text": "- DRC：0 个 Error，5 个 Warning。Warning 为现有 RGMII RXC T11 非专用时钟布线约束、3 个未使用 Flash 输入缓冲和无负载诊断/计数网络；没有 FRSTDATA 引脚冲突。"
+      },
+      {
+        "line": 17,
+        "text": "- `report_io` 确认 `adc1_frstdata=K15`、`adc2_frstdata=F14`、`adc3_frstdata=G6`，均为 LVCMOS33 输入。"
+      },
+      {
+        "line": 18,
+        "text": "- 产物：`fpga_adc_udp_flash_param_rate.bit`（1,893,367 bytes）、`.bin`（1,893,212 bytes）、`.mcs`（5,325,168 bytes）和 `final_routed.dcp`。BIN/MCS 检查通过，结束地址 `0x1CE35C`，在 8 MiB 配置区内。"
+      },
+      {
+        "line": 19,
+        "text": "- BIT SHA-256：`340DB5026F4312BFD3241EC9B73359A9F777F1614DC8BF67C5F3683DBAF98307`。"
+      },
+      {
+        "line": 20,
+        "text": "- 构建脚本：`co_project/Final_pro/ADC_transmission_flash_param_rate_project_clean/scripts/build_task004_final_bitstream.ps1`；流程和清理说明见 `FPGA_BUILD.md`。"
+      }
+    ]
+  },
+  {
+    "evidence_id": "e4",
+    "repository_path": "co_project/Final_pro/ADC_transmission_flash_param_rate_project_clean/constraints/fpga_adc_udp_flash_param.xdc",
+    "file_sha256": "9cfb148dc54d668a23d4d6b4ffaa0be216b9a9a123f329a41d1765c16a69281f",
+    "purpose": "Current pin constraints; inspect selected FRSTDATA lines only",
+    "lines": [
+      {
+        "line": 116,
+        "text": "set_property PACKAGE_PIN K15 [get_ports adc1_frstdata]"
+      },
+      {
+        "line": 146,
+        "text": "set_property PACKAGE_PIN F14 [get_ports adc2_frstdata]"
+      },
+      {
+        "line": 176,
+        "text": "set_property PACKAGE_PIN G6 [get_ports adc3_frstdata]"
+      }
+    ]
+  },
+  {
+    "evidence_id": "e5",
+    "repository_path": "results/task004/qspi_programming/program.log",
+    "file_sha256": "7ba8721a001238accb3ac01282348c299cb86ab692f939cd8bd63848ff60772e",
+    "purpose": "Historical Program/Verify result",
+    "lines": [
+      {
+        "line": 57,
+        "text": "Performing Program and Verify Operations..."
+      },
+      {
+        "line": 58,
+        "text": "Program/Verify Operation successful."
+      },
+      {
+        "line": 59,
+        "text": "INFO: [Labtoolstcl 44-377] Flash programming completed successfully"
+      },
+      {
+        "line": 60,
+        "text": "program_hw_cfgmem: Time (s): cpu = 00:00:00 ; elapsed = 00:00:49 . Memory (MB): peak = 576.777 ; gain = 1.809"
+      },
+      {
+        "line": 61,
+        "text": "PASS: programmed 1893212 bytes below 0x800000; parameter A/B sectors were outside PROGRAM.ADDRESS_RANGE."
+      }
+    ]
+  },
+  {
+    "evidence_id": "e6",
+    "repository_path": "results/task004/qspi_programming/boot_test.log",
+    "file_sha256": "756dacc3a72117d25d2bf0a90289bb0833f8563aefd939b9dae5b026065c678e",
+    "purpose": "Historical QSPI boot status; only completion markers exported",
+    "lines": [
+      {
+        "line": 51,
+        "text": "BOOT_REQUEST=QSPI"
+      },
+      {
+        "line": 53,
+        "text": "INFO: [Labtools 27-32] Done pin status: HIGH"
+      },
+      {
+        "line": 56,
+        "text": "DONE=1"
+      },
+      {
+        "line": 57,
+        "text": "QSPI_BOOT_PASS"
+      }
+    ]
+  },
+  {
+    "evidence_id": "e7",
+    "repository_path": "co_project/Final_pro/QtControlHost_v6/src/csvrecorder.cpp",
+    "file_sha256": "9b9a4b523f775bcd22c2f95bec1b844dba391381e56633aae9266f22181868c2",
+    "purpose": "Current TXT header code",
+    "lines": [
+      {
+        "line": 30,
+        "text": "QByteArray makeHeader() {"
+      },
+      {
+        "line": 31,
+        "text": "    QByteArray header(\"\\xEF\\xBB\\xBFpacket_sequence\\tsample_index\\ttime_us\");"
+      },
+      {
+        "line": 32,
+        "text": "    for (int channel = 0; channel < 24; ++channel) {"
+      },
+      {
+        "line": 33,
+        "text": "        header.append('\\t');"
+      },
+      {
+        "line": 34,
+        "text": "        header.append(\"CH\");"
+      },
+      {
+        "line": 35,
+        "text": "        if (channel < 10) header.append('0');"
+      },
+      {
+        "line": 36,
+        "text": "        appendInteger(header, channel);"
+      },
+      {
+        "line": 37,
+        "text": "        header.append(\"_code\");"
+      },
+      {
+        "line": 38,
+        "text": "        header.append('\\t');"
+      },
+      {
+        "line": 39,
+        "text": "        header.append(\"CH\");"
+      },
+      {
+        "line": 40,
+        "text": "        if (channel < 10) header.append('0');"
+      },
+      {
+        "line": 41,
+        "text": "        appendInteger(header, channel);"
+      },
+      {
+        "line": 42,
+        "text": "        header.append(\"_V\");"
+      },
+      {
+        "line": 43,
+        "text": "    }"
+      },
+      {
+        "line": 44,
+        "text": "    header.append(\"\\r\\n\");"
+      }
+    ]
+  },
+  {
+    "evidence_id": "e8",
+    "repository_path": "co_project/Final_pro/QtControlHost_v6/src/csvrecorder.cpp",
+    "file_sha256": "9b9a4b523f775bcd22c2f95bec1b844dba391381e56633aae9266f22181868c2",
+    "purpose": "Current final commit code",
+    "lines": [
+      {
+        "line": 329,
+        "text": "    if (!failed && !file.commit()) {"
+      },
+      {
+        "line": 330,
+        "text": "\t\terror = QStringLiteral(\"TXT提交失败：%1\").arg(file.errorString());"
+      },
+      {
+        "line": 331,
+        "text": "        failed = true;"
+      },
+      {
+        "line": 332,
+        "text": "    }"
+      },
+      {
+        "line": 333,
+        "text": "    if (failed) file.cancelWriting();"
+      },
+      {
+        "line": 334,
+        "text": ""
+      }
+    ]
+  },
+  {
+    "evidence_id": "e9",
+    "repository_path": "co_project/Final_pro/QtControlHost_v6/src/dataworker.cpp",
+    "file_sha256": "f60cccff2e32b5ba959db1ba17a8df04072a1ce6d582066621779ad91570da18",
+    "purpose": "Current socket and bind code",
+    "lines": [
+      {
+        "line": 511,
+        "text": "    SOCKET socketHandle = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);"
+      },
+      {
+        "line": 512,
+        "text": "    if (socketHandle == INVALID_SOCKET) {"
+      },
+      {
+        "line": 513,
+        "text": "        WSACleanup();"
+      },
+      {
+        "line": 514,
+        "text": "        emit monitorOpened(false, QStringLiteral(\"无法创建UDP接收套接字。\"));"
+      },
+      {
+        "line": 515,
+        "text": "        return;"
+      },
+      {
+        "line": 516,
+        "text": "    }"
+      },
+      {
+        "line": 517,
+        "text": ""
+      },
+      {
+        "line": 518,
+        "text": "    int receiveBuffer = kReceiveBufferBytes;"
+      },
+      {
+        "line": 519,
+        "text": "    setsockopt(socketHandle, SOL_SOCKET, SO_RCVBUF,"
+      },
+      {
+        "line": 520,
+        "text": "               reinterpret_cast<const char *>(&receiveBuffer), sizeof(receiveBuffer));"
+      },
+      {
+        "line": 521,
+        "text": "    int actualBuffer = 0;"
+      },
+      {
+        "line": 522,
+        "text": "    int actualLength = sizeof(actualBuffer);"
+      },
+      {
+        "line": 523,
+        "text": "    getsockopt(socketHandle, SOL_SOCKET, SO_RCVBUF,"
+      },
+      {
+        "line": 524,
+        "text": "               reinterpret_cast<char *>(&actualBuffer), &actualLength);"
+      },
+      {
+        "line": 525,
+        "text": "    DWORD timeout = 100;"
+      },
+      {
+        "line": 526,
+        "text": "    setsockopt(socketHandle, SOL_SOCKET, SO_RCVTIMEO,"
+      },
+      {
+        "line": 527,
+        "text": "               reinterpret_cast<const char *>(&timeout), sizeof(timeout));"
+      },
+      {
+        "line": 528,
+        "text": ""
+      },
+      {
+        "line": 529,
+        "text": "    sockaddr_in local {};"
+      },
+      {
+        "line": 530,
+        "text": "    if (!setAddress(local, bindAddress, config.dataPort) ||"
+      },
+      {
+        "line": 531,
+        "text": "        bind(socketHandle, reinterpret_cast<sockaddr *>(&local), sizeof(local)) == SOCKET_ERROR) {"
+      },
+      {
+        "line": 532,
+        "text": "        const int error = WSAGetLastError();"
+      },
+      {
+        "line": 533,
+        "text": "        closesocket(socketHandle);"
+      },
+      {
+        "line": 534,
+        "text": "        WSACleanup();"
+      },
+      {
+        "line": 535,
+        "text": "        emit monitorOpened(false, QStringLiteral(\"无法绑定 %1:%2，WSA=%3。请关闭占用数据端口的程序。\")"
+      },
+      {
+        "line": 536,
+        "text": "             .arg(bindAddress.toString()).arg(config.dataPort).arg(error));"
+      },
+      {
+        "line": 537,
+        "text": "        return;"
+      }
+    ]
+  },
+  {
+    "evidence_id": "e10",
+    "repository_path": "Tasks/task-006-channel-data-excel-export/EXECUTION_LOG.md",
+    "file_sha256": "a8a5e1bfb0a723a61d9ca0508394cc819289d926eb7729ad27445801f04ec1ab",
+    "purpose": "Historical TXT compilation and verification boundary",
+    "lines": [
+      {
+        "line": 22,
+        "text": "## 2026-10-10 — 改为制表符分隔TXT"
+      },
+      {
+        "line": 23,
+        "text": "1. 根据用户反馈改为UTF-8文本 `.txt`，字段用制表符分隔，保留24路码值、电压和采样时间信息；可用记事本查看或导入Excel。"
+      },
+      {
+        "line": 24,
+        "text": "2. 保存路径仍在采集前选择，运行时写临时文件，停止后提交最终TXT；未勾选可直接运行。"
+      },
+      {
+        "line": 25,
+        "text": "3. 初次编译发现文本表头函数声明遗漏，修正后Qt 6.8.3 / MinGW 13.1目标编译通过；未运行测试或连接硬件。便携版部署到 `co_project/Final_pro/QtControlHost_v6/dist/QtControlHost_v6_txt/`。"
+      },
+      {
+        "line": 26,
+        "text": "下一步：等待用户使用TXT版验收；确认后再按要求归档任务。"
+      }
+    ]
+  }
+]

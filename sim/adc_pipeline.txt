@@ -1,0 +1,68 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/fpga+stm32_project/results/task010/fpga_project/fpga/rtl/ad7606c_pipelined_controller.v" into library work
+INFO: [VRFC 10-311] analyzing module ad7606c_pipelined_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/fpga+stm32_project/results/task010/fpga_project/fpga/tb/tb_ad7606c_pipeline_1m.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_ad7606c_pipeline_1m
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/fpga+stm32_project/results/task010/fpga_project/fpga/tb/tb_ad7606c_frstdata_guard.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_ad7606c_frstdata_guard
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/vitis/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe -debug typical tb_ad7606c_pipeline_1m -s tb_ad7606c_pipeline_1m_sim 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.ad7606c_pipelined_controller
+Compiling module work.tb_ad7606c_pipeline_1m
+Built simulation snapshot tb_ad7606c_pipeline_1m_sim
+
+****** xsim v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Sat Oct 31 09:31:10 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_ad7606c_pipeline_1m_sim/xsim_script.tcl
+# xsim {tb_ad7606c_pipeline_1m_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: 12 ordered V1..V8 frames at 1 MSPS; BUSY=21 clocks, minimum last-RD margin=7 clocks
+$finish called at time : 12859375 ps : File "D:/fpga+stm32_project/results/task010/fpga_project/fpga/tb/tb_ad7606c_pipeline_1m.v" Line 189
+exit
+INFO: [Common 17-206] Exiting xsim at Sat Oct 31 09:31:14 2026...
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/vitis/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe -debug typical tb_ad7606c_frstdata_guard -s tb_ad7606c_frstdata_guard_sim 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.ad7606c_pipelined_controller
+Compiling module work.tb_ad7606c_frstdata_guard
+Built simulation snapshot tb_ad7606c_frstdata_guard_sim
+
+****** xsim v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Sat Oct 31 09:31:21 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_ad7606c_frstdata_guard_sim/xsim_script.tcl
+# xsim {tb_ad7606c_frstdata_guard_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: FRSTDATA mismatch rejected; no sample_valid was published
+$finish called at time : 1109375 ps : File "D:/fpga+stm32_project/results/task010/fpga_project/fpga/tb/tb_ad7606c_frstdata_guard.v" Line 65
+exit
+INFO: [Common 17-206] Exiting xsim at Sat Oct 31 09:31:23 2026...

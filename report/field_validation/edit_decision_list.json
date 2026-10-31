@@ -1,0 +1,79 @@
+[
+  {
+    "output_start": 0,
+    "duration": 6,
+    "source": "camera",
+    "source_start": 350,
+    "caption": "实物连接：信号源、采集板与以太网"
+  },
+  {
+    "output_start": 6,
+    "duration": 6,
+    "source": "screen",
+    "source_start": 40,
+    "caption": "设备配置：24路上传 / 500 kSPS / 30组每包"
+  },
+  {
+    "output_start": 12,
+    "duration": 6,
+    "source": "screen",
+    "source_start": 134,
+    "caption": "第一组输入响应：当前放大显示部分通道"
+  },
+  {
+    "output_start": 18,
+    "duration": 6,
+    "source": "screen",
+    "source_start": 248,
+    "caption": "250 kSPS运行片段"
+  },
+  {
+    "output_start": 24,
+    "duration": 6,
+    "source": "screen",
+    "source_start": 278,
+    "caption": "1 MSPS短时运行片段"
+  },
+  {
+    "output_start": 30,
+    "duration": 6,
+    "source": "screen",
+    "source_start": 698,
+    "caption": "换接第二组：当前放大CH13至CH15"
+  },
+  {
+    "output_start": 36,
+    "duration": 6,
+    "source": "screen",
+    "source_start": 742,
+    "caption": "换接第三组：当前放大CH18至CH21"
+  },
+  {
+    "output_start": 42,
+    "duration": 6,
+    "source": "screen",
+    "source_start": 476,
+    "caption": "参数保存成功：22路上传 / 28组每包"
+  },
+  {
+    "output_start": 48,
+    "duration": 4,
+    "source": "screen",
+    "source_start": 507,
+    "caption": "设备读回：来源Flash / Sequence 7"
+  },
+  {
+    "output_start": 52,
+    "duration": 4,
+    "source": "screen",
+    "source_start": 760,
+    "caption": "TXT记录：实际采集与停止"
+  },
+  {
+    "output_start": 56,
+    "duration": 4,
+    "source": "screen",
+    "source_start": 800,
+    "caption": "打开实际TXT：时间、码值与电压"
+  }
+]

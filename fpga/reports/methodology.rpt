@@ -1,0 +1,486 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Sat Oct 10 14:24:03 2026
+| Host         : mqy996 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file D:/fpga+stm32_project/results/task004/final_bitstream/20261010_141613/methodology.rpt
+| Design       : fpga_adc_udp_flash_param_top
+| Device       : xc7a100tcsg324-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: fpga_adc_udp_flash_param_top
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 89
++-----------+----------+-------------------------------------------------------------------------------------------------------+--------+
+| Rule      | Severity | Description                                                                                           | Checks |
++-----------+----------+-------------------------------------------------------------------------------------------------------+--------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                                                                          | 2      |
+| SYNTH-6   | Warning  | Timing of a RAM block might be sub-optimal                                                            | 1      |
+| TIMING-9  | Warning  | Unknown CDC Logic                                                                                     | 1      |
+| TIMING-18 | Warning  | Missing input or output delay                                                                         | 75     |
+| TIMING-28 | Warning  | Auto-derived clock referenced by a timing constraint                                                  | 6      |
+| TIMING-47 | Warning  | False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks | 4      |
++-----------+----------+-------------------------------------------------------------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell u_clock_reset/u_rst200/g_hw_capture.u_idelayctrl_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_network/u_rx/g_hw_capture.u_idelayctrl/RST. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell u_clock_reset/u_rst32/g_flash_runtime.u_flash_params_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) g_flash_runtime.u_flash_params/eos_sync_reg[0]/CLR
+g_flash_runtime.u_flash_params/eos_sync_reg[1]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+SYNTH-6#1 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance u_network/u_frame_ram/mem_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on flash_dq[0] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on flash_dq[1] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on flash_dq[2] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on flash_dq[3] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on adc1_convst relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on adc1_db[0] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on adc1_db[10] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on adc1_db[11] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on adc1_db[12] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on adc1_db[13] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on adc1_db[14] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on adc1_db[15] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on adc1_db[1] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on adc1_db[2] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on adc1_db[3] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on adc1_db[4] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on adc1_db[5] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on adc1_db[6] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on adc1_db[7] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on adc1_db[8] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on adc1_db[9] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on adc1_ncs relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on adc1_nrd relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on adc1_nwr relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on adc1_rst relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on adc2_convst relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on adc2_db[0] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on adc2_db[10] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An output delay is missing on adc2_db[11] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An output delay is missing on adc2_db[12] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An output delay is missing on adc2_db[13] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#32 Warning
+Missing input or output delay  
+An output delay is missing on adc2_db[14] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#33 Warning
+Missing input or output delay  
+An output delay is missing on adc2_db[15] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#34 Warning
+Missing input or output delay  
+An output delay is missing on adc2_db[1] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#35 Warning
+Missing input or output delay  
+An output delay is missing on adc2_db[2] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#36 Warning
+Missing input or output delay  
+An output delay is missing on adc2_db[3] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#37 Warning
+Missing input or output delay  
+An output delay is missing on adc2_db[4] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#38 Warning
+Missing input or output delay  
+An output delay is missing on adc2_db[5] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#39 Warning
+Missing input or output delay  
+An output delay is missing on adc2_db[6] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#40 Warning
+Missing input or output delay  
+An output delay is missing on adc2_db[7] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#41 Warning
+Missing input or output delay  
+An output delay is missing on adc2_db[8] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#42 Warning
+Missing input or output delay  
+An output delay is missing on adc2_db[9] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#43 Warning
+Missing input or output delay  
+An output delay is missing on adc2_ncs relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#44 Warning
+Missing input or output delay  
+An output delay is missing on adc2_nrd relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#45 Warning
+Missing input or output delay  
+An output delay is missing on adc2_nwr relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#46 Warning
+Missing input or output delay  
+An output delay is missing on adc2_rst relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#47 Warning
+Missing input or output delay  
+An output delay is missing on adc3_convst relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#48 Warning
+Missing input or output delay  
+An output delay is missing on adc3_db[0] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#49 Warning
+Missing input or output delay  
+An output delay is missing on adc3_db[10] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#50 Warning
+Missing input or output delay  
+An output delay is missing on adc3_db[11] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#51 Warning
+Missing input or output delay  
+An output delay is missing on adc3_db[12] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#52 Warning
+Missing input or output delay  
+An output delay is missing on adc3_db[13] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#53 Warning
+Missing input or output delay  
+An output delay is missing on adc3_db[14] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#54 Warning
+Missing input or output delay  
+An output delay is missing on adc3_db[15] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#55 Warning
+Missing input or output delay  
+An output delay is missing on adc3_db[1] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#56 Warning
+Missing input or output delay  
+An output delay is missing on adc3_db[2] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#57 Warning
+Missing input or output delay  
+An output delay is missing on adc3_db[3] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#58 Warning
+Missing input or output delay  
+An output delay is missing on adc3_db[4] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#59 Warning
+Missing input or output delay  
+An output delay is missing on adc3_db[5] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#60 Warning
+Missing input or output delay  
+An output delay is missing on adc3_db[6] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#61 Warning
+Missing input or output delay  
+An output delay is missing on adc3_db[7] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#62 Warning
+Missing input or output delay  
+An output delay is missing on adc3_db[8] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#63 Warning
+Missing input or output delay  
+An output delay is missing on adc3_db[9] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#64 Warning
+Missing input or output delay  
+An output delay is missing on adc3_ncs relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#65 Warning
+Missing input or output delay  
+An output delay is missing on adc3_nrd relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#66 Warning
+Missing input or output delay  
+An output delay is missing on adc3_nwr relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#67 Warning
+Missing input or output delay  
+An output delay is missing on adc3_rst relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#68 Warning
+Missing input or output delay  
+An output delay is missing on capture_led_n relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#69 Warning
+Missing input or output delay  
+An output delay is missing on flash_cs_n relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#70 Warning
+Missing input or output delay  
+An output delay is missing on flash_dq[0] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#71 Warning
+Missing input or output delay  
+An output delay is missing on flash_dq[1] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#72 Warning
+Missing input or output delay  
+An output delay is missing on flash_dq[2] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#73 Warning
+Missing input or output delay  
+An output delay is missing on flash_dq[3] relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#74 Warning
+Missing input or output delay  
+An output delay is missing on sample_monitor relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-18#75 Warning
+Missing input or output delay  
+An output delay is missing on system_status_led_n relative to the rising and/or falling clock edge(s) of clk32m_in.
+Related violations: <none>
+
+TIMING-28#1 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk125_90_mmcm is referenced by name inside timing constraint (see constraint position 14 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins u_clock_reset/u_mmcm/CLKOUT1]
+Related violations: <none>
+
+TIMING-28#2 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk125_90_mmcm is referenced by name inside timing constraint (see constraint position 15 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins u_clock_reset/u_mmcm/CLKOUT1]
+Related violations: <none>
+
+TIMING-28#3 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk125_mmcm is referenced by name inside timing constraint (see constraint position 14 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins u_clock_reset/u_mmcm/CLKOUT0]
+Related violations: <none>
+
+TIMING-28#4 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk125_mmcm is referenced by name inside timing constraint (see constraint position 15 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins u_clock_reset/u_mmcm/CLKOUT0]
+Related violations: <none>
+
+TIMING-28#5 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk200_mmcm is referenced by name inside timing constraint (see constraint position 14 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins u_clock_reset/u_mmcm/CLKOUT2]
+Related violations: <none>
+
+TIMING-28#6 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk200_mmcm is referenced by name inside timing constraint (see constraint position 15 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins u_clock_reset/u_mmcm/CLKOUT2]
+Related violations: <none>
+
+TIMING-47#1 Warning
+False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks  
+A Clock Group timing constraint is set between synchronous clocks clk125_mmcm and clk32m_in (see constraint position 15 in the Timing Constraint window in Vivado IDE). Masking entire synchronous clock domains via  set_false_path, set_clock_groups or set_max_delay -datapath_only may result in failure in hardware.
+Related violations: <none>
+
+TIMING-47#2 Warning
+False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks  
+A Clock Group timing constraint is set between synchronous clocks clk32m_in and clk125_90_mmcm (see constraint position 15 in the Timing Constraint window in Vivado IDE). Masking entire synchronous clock domains via  set_false_path, set_clock_groups or set_max_delay -datapath_only may result in failure in hardware.
+Related violations: <none>
+
+TIMING-47#3 Warning
+False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks  
+A Clock Group timing constraint is set between synchronous clocks clk32m_in and clk125_mmcm (see constraint position 15 in the Timing Constraint window in Vivado IDE). Masking entire synchronous clock domains via  set_false_path, set_clock_groups or set_max_delay -datapath_only may result in failure in hardware.
+Related violations: <none>
+
+TIMING-47#4 Warning
+False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks  
+A Clock Group timing constraint is set between synchronous clocks clk32m_in and clk200_mmcm (see constraint position 15 in the Timing Constraint window in Vivado IDE). Masking entire synchronous clock domains via  set_false_path, set_clock_groups or set_max_delay -datapath_only may result in failure in hardware.
+Related violations: <none>
+
+

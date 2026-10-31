@@ -1,0 +1,89 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Sat Oct 10 14:23:48 2026
+| Host         : mqy996 running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file D:/fpga+stm32_project/results/task004/final_bitstream/20261010_141613/utilization.rpt
+| Design       : fpga_adc_udp_flash_param_top
+| Device       : xc7a100tcsg324-2
+| Speed File   : -2
+| Design State : Routed
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------------------------------+--------------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+|                   Instance                   |                Module                | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | DSP Blocks |
++----------------------------------------------+--------------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+| fpga_adc_udp_flash_param_top                 |                                (top) |      10194 |      10194 |       0 |    0 | 12357 |      5 |      2 |          0 |
+|   (fpga_adc_udp_flash_param_top)             |                                (top) |          3 |          3 |       0 |    0 |     3 |      0 |      0 |          0 |
+|   g_flash_runtime.u_flash_params             |                  flash_param_manager |       5485 |       5485 |       0 |    0 |  2220 |      0 |      0 |          0 |
+|     (g_flash_runtime.u_flash_params)         |                  flash_param_manager |       3418 |       3418 |       0 |    0 |  2138 |      0 |      0 |          0 |
+|     u_spi                                    |                flash_spi_byte_master |       2075 |       2075 |       0 |    0 |    82 |      0 |      0 |          0 |
+|   u_adc_capture                              |                     adc_capture_24ch |        520 |        520 |       0 |    0 |  1184 |      0 |      0 |          0 |
+|     (u_adc_capture)                          |                     adc_capture_24ch |         14 |         14 |       0 |    0 |   401 |      0 |      0 |          0 |
+|     u_adc1                                   |              ad7606c_device_frontend |        173 |        173 |       0 |    0 |   261 |      0 |      0 |          0 |
+|       u_reg                                  |       ad7606c_parallel_reg_master_24 |        105 |        105 |       0 |    0 |    84 |      0 |      0 |          0 |
+|       g_pipeline.u_capture                   |      ad7606c_pipelined_controller_23 |         64 |         64 |       0 |    0 |   152 |      0 |      0 |          0 |
+|     u_adc2                                   |           ad7606c_device_frontend_19 |        169 |        169 |       0 |    0 |   261 |      0 |      0 |          0 |
+|       u_reg                                  |       ad7606c_parallel_reg_master_22 |        105 |        105 |       0 |    0 |    84 |      0 |      0 |          0 |
+|       g_pipeline.u_capture                   |      ad7606c_pipelined_controller_21 |         62 |         62 |       0 |    0 |   152 |      0 |      0 |          0 |
+|     u_adc3                                   |           ad7606c_device_frontend_20 |        165 |        165 |       0 |    0 |   261 |      0 |      0 |          0 |
+|       u_reg                                  |          ad7606c_parallel_reg_master |        105 |        105 |       0 |    0 |    84 |      0 |      0 |          0 |
+|       g_pipeline.u_capture                   |         ad7606c_pipelined_controller |         58 |         58 |       0 |    0 |   152 |      0 |      0 |          0 |
+|   u_clock_reset                              |                     clock_reset_ctrl |         24 |         24 |       0 |    0 |    61 |      0 |      0 |          0 |
+|   u_flash_cdc                                |              flash_config_cdc_bridge |         58 |         58 |       0 |    0 |  2114 |      0 |      0 |          0 |
+|     u_save_result                            |   flash_cdc_transfer__parameterized1 |         43 |         43 |       0 |    0 |   161 |      0 |      0 |          0 |
+|       (u_save_result)                        |   flash_cdc_transfer__parameterized1 |         42 |         42 |       0 |    0 |    79 |      0 |      0 |          0 |
+|       u_handshake                            |    xpm_cdc_handshake__parameterized1 |          2 |          2 |       0 |    0 |    82 |      0 |      0 |          0 |
+|         (u_handshake)                        |    xpm_cdc_handshake__parameterized1 |          2 |          2 |       0 |    0 |    78 |      0 |      0 |          0 |
+|     u_boot                                   |                   flash_cdc_transfer |          9 |          9 |       0 |    0 |  1045 |      0 |      0 |          0 |
+|       (u_boot)                               |                   flash_cdc_transfer |          7 |          7 |       0 |    0 |   521 |      0 |      0 |          0 |
+|       u_handshake                            |                    xpm_cdc_handshake |          2 |          2 |       0 |    0 |   524 |      0 |      0 |          0 |
+|         (u_handshake)                        |                    xpm_cdc_handshake |          2 |          2 |       0 |    0 |   520 |      0 |      0 |          0 |
+|     u_save_req                               |   flash_cdc_transfer__parameterized0 |          6 |          6 |       0 |    0 |   906 |      0 |      0 |          0 |
+|       (u_save_req)                           |   flash_cdc_transfer__parameterized0 |          4 |          4 |       0 |    0 |   452 |      0 |      0 |          0 |
+|       u_handshake                            |    xpm_cdc_handshake__parameterized0 |          2 |          2 |       0 |    0 |   454 |      0 |      0 |          0 |
+|         (u_handshake)                        |    xpm_cdc_handshake__parameterized0 |          2 |          2 |       0 |    0 |   450 |      0 |      0 |          0 |
+|   u_flash_jedec_sync                         |                 xpm_cdc_array_single |          0 |          0 |       0 |    0 |    72 |      0 |      0 |          0 |
+|   u_network                                  |           network_flash_control_core |       4035 |       4035 |       0 |    0 |  6546 |      5 |      2 |          0 |
+|     (u_network)                              |           network_flash_control_core |         32 |         32 |       0 |    0 |    85 |      0 |      0 |          0 |
+|     u_arp_mac_cdc                            |    xpm_cdc_handshake__parameterized5 |          2 |          2 |       0 |    0 |   102 |      0 |      0 |          0 |
+|       (u_arp_mac_cdc)                        |    xpm_cdc_handshake__parameterized5 |          2 |          2 |       0 |    0 |    98 |      0 |      0 |          0 |
+|     u_arp_request                            |                  arp_request_runtime |         97 |         97 |       0 |    0 |    39 |      0 |      0 |          0 |
+|     u_cfg_manager                            |               runtime_config_manager |        855 |        855 |       0 |    0 |  1023 |      0 |      0 |          0 |
+|     u_cfg_to_rx                              | xpm_cdc_handshake__parameterized0__1 |          2 |          2 |       0 |    0 |   198 |      0 |      0 |          0 |
+|       (u_cfg_to_rx)                          | xpm_cdc_handshake__parameterized0__1 |          2 |          2 |       0 |    0 |   194 |      0 |      0 |          0 |
+|     u_control_response                       |          control_response_tx_runtime |        488 |        488 |       0 |    0 |   270 |      0 |      0 |          0 |
+|       (u_control_response)                   |          control_response_tx_runtime |        249 |        249 |       0 |    0 |    84 |      0 |      0 |          0 |
+|       u_udp                                  |               udp_ipv4_tx_runtime_14 |        239 |        239 |       0 |    0 |   186 |      0 |      0 |          0 |
+|     u_control_rx                             |               control_udp_rx_runtime |        496 |        496 |       0 |    0 |  1248 |      0 |      0 |          0 |
+|     u_ctrl_cdc                               |    xpm_cdc_handshake__parameterized3 |          2 |          2 |       0 |    0 |   838 |      0 |      0 |          0 |
+|       (u_ctrl_cdc)                           |    xpm_cdc_handshake__parameterized3 |          2 |          2 |       0 |    0 |   834 |      0 |      0 |          0 |
+|     u_mac_tx                                 |                           eth_mac_tx |         97 |         97 |       0 |    0 |    82 |      0 |      0 |          0 |
+|     u_parser                                 |                       ping_rx_engine |        703 |        703 |       0 |    0 |   860 |      0 |      0 |          0 |
+|     u_payload_length                         |               runtime_payload_length |         51 |         51 |       0 |    0 |    21 |      0 |      0 |          0 |
+|     u_reply                                  |                        ping_reply_tx |        269 |        269 |       0 |    0 |   203 |      0 |      0 |          0 |
+|     u_request_descriptor_cdc                 |    xpm_cdc_handshake__parameterized4 |          2 |          2 |       0 |    0 |   346 |      0 |      0 |          0 |
+|       (u_request_descriptor_cdc)             |    xpm_cdc_handshake__parameterized4 |          2 |          2 |       0 |    0 |   342 |      0 |      0 |          0 |
+|     u_rx                                     |                    rgmii_rx_adaptive |        210 |        210 |       0 |    0 |   108 |      0 |      0 |          0 |
+|       u_align                                |                       rgmii_rx_align |        206 |        206 |       0 |    0 |    84 |      0 |      0 |          0 |
+|     u_sample_fifo                            |              sample_group_async_fifo |        185 |        185 |       0 |    0 |   285 |      5 |      1 |          0 |
+|       u_fifo                                 |                       xpm_fifo_async |        176 |        176 |       0 |    0 |   285 |      5 |      1 |          0 |
+|         gnuram_async_fifo.xpm_fifo_base_inst |                        xpm_fifo_base |        176 |        176 |       0 |    0 |   285 |      5 |      1 |          0 |
+|           gen_cdc_pntr.wr_pntr_cdc_dc_inst   |         xpm_cdc_gray__parameterized0 |         14 |         14 |       0 |    0 |    50 |      0 |      0 |          0 |
+|     u_udp_batch                              |              fifo_udp_stream_runtime |        487 |        487 |       0 |    0 |   767 |      0 |      0 |          0 |
+|       (u_udp_batch)                          |              fifo_udp_stream_runtime |         10 |         10 |       0 |    0 |    65 |      0 |      0 |          0 |
+|       u_frame                                |                  udp_ipv4_tx_runtime |        220 |        220 |       0 |    0 |   196 |      0 |      0 |          0 |
+|       u_payload                              |             fifo_udp_payload_runtime |        257 |        257 |       0 |    0 |   506 |      0 |      0 |          0 |
++----------------------------------------------+--------------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

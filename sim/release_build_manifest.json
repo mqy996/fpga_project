@@ -1,0 +1,54 @@
+{
+  "build_id": "task004_20261010_141613_validated_release",
+  "expectation_source": "Pinned historical release and task005 SHA256SUMS, checked before packaging.",
+  "partitions": [
+    {
+      "name": "boot",
+      "start": "0x0",
+      "end_exclusive": "0x800000"
+    },
+    {
+      "name": "params_a",
+      "start": "0x800000",
+      "end_exclusive": "0xc00000"
+    },
+    {
+      "name": "params_b",
+      "start": "0xc00000",
+      "end_exclusive": "0x1000000"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "../fpga/bitstream/fpga_adc_udp_flash_param_rate.bin",
+      "kind": "raw_image",
+      "sha256": "a236fd5fd5810ea9c91df48887a6dfaa13f5e3a07b9068dcc0be96ac1e086863",
+      "size_bytes": 1893212,
+      "start": "0x0",
+      "partition": "boot"
+    },
+    {
+      "path": "../fpga/bitstream/fpga_adc_udp_flash_param_rate.bit",
+      "kind": "file",
+      "sha256": "340db5026f4312bfd3241ec9b73359a9f777f1614dc8bf67c5f3683dbaf98307",
+      "size_bytes": 1893367
+    },
+    {
+      "path": "../fpga/bitstream/fpga_adc_udp_flash_param_rate.mcs",
+      "kind": "file",
+      "sha256": "cb4b147c653f62511433a51a0786698b06314ad8c03ed1fe2ae81061554894dd",
+      "size_bytes": 5325168
+    },
+    {
+      "path": "../fpga/reports/timing_summary.rpt",
+      "kind": "report",
+      "sha256": "ff80193f1be739c3765139085dc7650b8eceba139b6e657d1e5a045c86b2ef3e",
+      "expected_headers": {
+        "Tool Version": "Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025",
+        "Design": "fpga_adc_udp_flash_param_top",
+        "Device": "7a100t-csg324",
+        "Design State": "Routed"
+      }
+    }
+  ]
+}

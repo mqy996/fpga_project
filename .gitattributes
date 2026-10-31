@@ -1,0 +1,10 @@
+# Preserve original bytes and SHA256 values on every platform.
+* -text
+*.bit binary
+*.bin binary
+*.mcs binary
+*.exe binary
+*.dll binary
+*.docx binary
+*.png binary
+*.jpg binary

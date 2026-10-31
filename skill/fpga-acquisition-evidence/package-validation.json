@@ -1,0 +1,21 @@
+{
+  "codex_entrypoint_validation": {
+    "exit_code": 0,
+    "stdout": "Skill is valid!",
+    "stderr": "",
+    "dependency": "existing Miniconda PyYAML via subprocess-only PYTHONPATH; no installation or persistent environment change",
+    "interpreter": "C:\\Users\\25651\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe"
+  },
+  "initial_validator_attempt": {
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\25651\\.codex\\skills\\.system\\skill-creator\\scripts\\quick_validate.py\", line 10, in <module>\n    import yaml\nModuleNotFoundError: No module named 'yaml'"
+  },
+  "all_submission_names_lowercase": true,
+  "invalid_names": [],
+  "local_markdown_links_ok": true,
+  "bad_links": [],
+  "python_compile_errors": [],
+  "file_count": 25,
+  "scope": "Temporary uppercase SKILL.md copy validated then deleted; no global installation."
+}

@@ -1,0 +1,1133 @@
+{
+  "generated_at_utc": "2026-10-31T01:31:56.110871+00:00",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "evidence_kind": "executed synthetic checker validation; not hardware measurement",
+  "cases": 22,
+  "passed": 22,
+  "ok": true,
+  "results": [
+    {
+      "name": "udp-wrap-reorder-duplicate-gap",
+      "command": [
+        "python",
+        "scripts/check_udp.py",
+        "check",
+        "--input",
+        "fixtures/udp-observation.jsonl",
+        "--groups",
+        "2"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expectations": {
+        "valid_records": 5,
+        "duplicates": 1,
+        "out_of_order_unique": 1,
+        "forward_wraps": 1,
+        "unobserved_within_sequence_span": 1,
+        "provisionally_opened_gaps": 2
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": true,
+        "input": "fixtures\\udp-observation.jsonl",
+        "scan": {
+          "records": 5,
+          "limit": 0,
+          "complete": true
+        },
+        "valid_records": 5,
+        "unique_sequences": 4,
+        "duplicates": 1,
+        "out_of_order_unique": 1,
+        "forward_gap_events": 2,
+        "provisionally_opened_gaps": 2,
+        "forward_wraps": 1,
+        "unobserved_within_sequence_span": 1,
+        "sequence_span": [
+          4294967294,
+          4294967298
+        ],
+        "error_count": 0,
+        "errors_first_20": [],
+        "profiles": [
+          {
+            "rate_sps_per_channel": 500000,
+            "mask": "0xffffff",
+            "channels": 24,
+            "groups": 2,
+            "payload_bytes": 108,
+            "packets_per_second": 250000.0,
+            "raw_sample_mbps": 192.0,
+            "udp_payload_mbps": 216.0,
+            "estimated_ethernet_mbps": 348.0,
+            "basis": "theory; IPv4 without options/VLAN; Ethernet padding/FCS/preamble/IFG included"
+          }
+        ],
+        "limits": [
+          "single sequence session; no reset inference; serial step must be less than 2^31",
+          "unobserved span positions are capture gaps, not proven link or ADC loss",
+          "valid payload/continuous sequence does not establish uninterrupted ADC cadence",
+          "memory is O(unique sequences); use limit for very large captures"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "name": "udp-late-gap-recovery",
+      "command": [
+        "python",
+        "scripts/check_udp.py",
+        "check",
+        "--input",
+        "fixtures/udp-recovered.jsonl",
+        "--groups",
+        "2"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expectations": {
+        "out_of_order_unique": 1,
+        "unobserved_within_sequence_span": 0
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": true,
+        "input": "fixtures\\udp-recovered.jsonl",
+        "scan": {
+          "records": 3,
+          "limit": 0,
+          "complete": true
+        },
+        "valid_records": 3,
+        "unique_sequences": 3,
+        "duplicates": 0,
+        "out_of_order_unique": 1,
+        "forward_gap_events": 1,
+        "provisionally_opened_gaps": 1,
+        "forward_wraps": 0,
+        "unobserved_within_sequence_span": 0,
+        "sequence_span": [
+          1,
+          3
+        ],
+        "error_count": 0,
+        "errors_first_20": [],
+        "profiles": [
+          {
+            "rate_sps_per_channel": 500000,
+            "mask": "0xffffff",
+            "channels": 24,
+            "groups": 2,
+            "payload_bytes": 108,
+            "packets_per_second": 250000.0,
+            "raw_sample_mbps": 192.0,
+            "udp_payload_mbps": 216.0,
+            "estimated_ethernet_mbps": 348.0,
+            "basis": "theory; IPv4 without options/VLAN; Ethernet padding/FCS/preamble/IFG included"
+          }
+        ],
+        "limits": [
+          "single sequence session; no reset inference; serial step must be less than 2^31",
+          "unobserved span positions are capture gaps, not proven link or ADC loss",
+          "valid payload/continuous sequence does not establish uninterrupted ADC cadence",
+          "memory is O(unique sequences); use limit for very large captures"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "name": "udp-invalid-payloads",
+      "command": [
+        "python",
+        "scripts/check_udp.py",
+        "check",
+        "--input",
+        "fixtures/udp-bad.jsonl"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expectations": {
+        "error_count": 4,
+        "valid_records": 0
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": false,
+        "input": "fixtures\\udp-bad.jsonl",
+        "scan": {
+          "records": 4,
+          "limit": 0,
+          "complete": true
+        },
+        "valid_records": 0,
+        "unique_sequences": 0,
+        "duplicates": 0,
+        "out_of_order_unique": 0,
+        "forward_gap_events": 0,
+        "provisionally_opened_gaps": 0,
+        "forward_wraps": 0,
+        "unobserved_within_sequence_span": 0,
+        "sequence_span": null,
+        "error_count": 4,
+        "errors_first_20": [
+          {
+            "line": 1,
+            "error": "short 12-byte application header"
+          },
+          {
+            "line": 2,
+            "error": "body is not an integral number of nonempty groups"
+          },
+          {
+            "line": 3,
+            "error": "body is not an integral number of nonempty groups"
+          },
+          {
+            "line": 4,
+            "error": "rate not in allowed profile"
+          }
+        ],
+        "profiles": [],
+        "limits": [
+          "single sequence session; no reset inference; serial step must be less than 2^31",
+          "unobserved span positions are capture gaps, not proven link or ADC loss",
+          "valid payload/continuous sequence does not establish uninterrupted ADC cadence",
+          "memory is O(unique sequences); use limit for very large captures"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "name": "udp-prefix-explicit",
+      "command": [
+        "python",
+        "scripts/check_udp.py",
+        "check",
+        "--input",
+        "fixtures/udp-observation.jsonl",
+        "--limit",
+        "2"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expectations": {
+        "scan.complete": false,
+        "scan.records": 2,
+        "unobserved_within_sequence_span": 1
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": true,
+        "input": "fixtures\\udp-observation.jsonl",
+        "scan": {
+          "records": 2,
+          "limit": 2,
+          "complete": false
+        },
+        "valid_records": 2,
+        "unique_sequences": 2,
+        "duplicates": 0,
+        "out_of_order_unique": 0,
+        "forward_gap_events": 1,
+        "provisionally_opened_gaps": 1,
+        "forward_wraps": 1,
+        "unobserved_within_sequence_span": 1,
+        "sequence_span": [
+          4294967294,
+          4294967296
+        ],
+        "error_count": 0,
+        "errors_first_20": [],
+        "profiles": [
+          {
+            "rate_sps_per_channel": 500000,
+            "mask": "0xffffff",
+            "channels": 24,
+            "groups": 2,
+            "payload_bytes": 108,
+            "packets_per_second": 250000.0,
+            "raw_sample_mbps": 192.0,
+            "udp_payload_mbps": 216.0,
+            "estimated_ethernet_mbps": 348.0,
+            "basis": "theory; IPv4 without options/VLAN; Ethernet padding/FCS/preamble/IFG included"
+          }
+        ],
+        "limits": [
+          "single sequence session; no reset inference; serial step must be less than 2^31",
+          "unobserved span positions are capture gaps, not proven link or ADC loss",
+          "valid payload/continuous sequence does not establish uninterrupted ADC cadence",
+          "memory is O(unique sequences); use limit for very large captures"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "name": "udp-exact-eof",
+      "command": [
+        "python",
+        "scripts/check_udp.py",
+        "check",
+        "--input",
+        "fixtures/udp-observation.jsonl",
+        "--limit",
+        "5"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expectations": {
+        "scan.complete": true,
+        "scan.records": 5
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": true,
+        "input": "fixtures\\udp-observation.jsonl",
+        "scan": {
+          "records": 5,
+          "limit": 5,
+          "complete": true
+        },
+        "valid_records": 5,
+        "unique_sequences": 4,
+        "duplicates": 1,
+        "out_of_order_unique": 1,
+        "forward_gap_events": 2,
+        "provisionally_opened_gaps": 2,
+        "forward_wraps": 1,
+        "unobserved_within_sequence_span": 1,
+        "sequence_span": [
+          4294967294,
+          4294967298
+        ],
+        "error_count": 0,
+        "errors_first_20": [],
+        "profiles": [
+          {
+            "rate_sps_per_channel": 500000,
+            "mask": "0xffffff",
+            "channels": 24,
+            "groups": 2,
+            "payload_bytes": 108,
+            "packets_per_second": 250000.0,
+            "raw_sample_mbps": 192.0,
+            "udp_payload_mbps": 216.0,
+            "estimated_ethernet_mbps": 348.0,
+            "basis": "theory; IPv4 without options/VLAN; Ethernet padding/FCS/preamble/IFG included"
+          }
+        ],
+        "limits": [
+          "single sequence session; no reset inference; serial step must be less than 2^31",
+          "unobserved span positions are capture gaps, not proven link or ADC loss",
+          "valid payload/continuous sequence does not establish uninterrupted ADC cadence",
+          "memory is O(unique sequences); use limit for very large captures"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "name": "udp-profile-mismatch",
+      "command": [
+        "python",
+        "scripts/check_udp.py",
+        "check",
+        "--input",
+        "fixtures/udp-recovered.jsonl",
+        "--expected-rate",
+        "250000"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expectations": {
+        "error_count": 3
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": false,
+        "input": "fixtures\\udp-recovered.jsonl",
+        "scan": {
+          "records": 3,
+          "limit": 0,
+          "complete": true
+        },
+        "valid_records": 0,
+        "unique_sequences": 0,
+        "duplicates": 0,
+        "out_of_order_unique": 0,
+        "forward_gap_events": 0,
+        "provisionally_opened_gaps": 0,
+        "forward_wraps": 0,
+        "unobserved_within_sequence_span": 0,
+        "sequence_span": null,
+        "error_count": 3,
+        "errors_first_20": [
+          {
+            "line": 1,
+            "error": "unexpected rate: 500000"
+          },
+          {
+            "line": 2,
+            "error": "unexpected rate: 500000"
+          },
+          {
+            "line": 3,
+            "error": "unexpected rate: 500000"
+          }
+        ],
+        "profiles": [],
+        "limits": [
+          "single sequence session; no reset inference; serial step must be less than 2^31",
+          "unobserved span positions are capture gaps, not proven link or ADC loss",
+          "valid payload/continuous sequence does not establish uninterrupted ADC cadence",
+          "memory is O(unique sequences); use limit for very large captures"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "name": "budget-full24-1msps",
+      "command": [
+        "python",
+        "scripts/check_udp.py",
+        "budget",
+        "--rate",
+        "1000000",
+        "--mask",
+        "0xffffff",
+        "--groups",
+        "30"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expectations": {
+        "payload_bytes": 1452,
+        "raw_sample_mbps": 384.0,
+        "estimated_ethernet_mbps": 404.8
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": true,
+        "rate_sps_per_channel": 1000000,
+        "mask": "0xffffff",
+        "channels": 24,
+        "groups": 30,
+        "payload_bytes": 1452,
+        "packets_per_second": 33333.333333333336,
+        "raw_sample_mbps": 384.0,
+        "udp_payload_mbps": 387.2,
+        "estimated_ethernet_mbps": 404.8,
+        "basis": "theory; IPv4 without options/VLAN; Ethernet padding/FCS/preamble/IFG included"
+      },
+      "stderr": ""
+    },
+    {
+      "name": "budget-minimum-ethernet-frame",
+      "command": [
+        "python",
+        "scripts/check_udp.py",
+        "budget",
+        "--rate",
+        "250000",
+        "--mask",
+        "1",
+        "--groups",
+        "1"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expectations": {
+        "payload_bytes": 14,
+        "estimated_ethernet_mbps": 168.0
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": true,
+        "rate_sps_per_channel": 250000,
+        "mask": "0x1",
+        "channels": 1,
+        "groups": 1,
+        "payload_bytes": 14,
+        "packets_per_second": 250000.0,
+        "raw_sample_mbps": 4.0,
+        "udp_payload_mbps": 28.0,
+        "estimated_ethernet_mbps": 168.0,
+        "basis": "theory; IPv4 without options/VLAN; Ethernet padding/FCS/preamble/IFG included"
+      },
+      "stderr": ""
+    },
+    {
+      "name": "budget-mtu-rejection",
+      "command": [
+        "python",
+        "scripts/check_udp.py",
+        "budget",
+        "--rate",
+        "1000000",
+        "--mask",
+        "0xffffff",
+        "--groups",
+        "31",
+        "--max-groups",
+        "31"
+      ],
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "expectations": {
+        "ok": false
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": false,
+        "error": "payload exceeds unfragmented IPv4 MTU (20-byte IP header)"
+      },
+      "stderr": ""
+    },
+    {
+      "name": "txt-good-with-sequence-gap",
+      "command": [
+        "python",
+        "scripts/check_txt.py",
+        "--input",
+        "fixtures/txt-good.txt",
+        "--rate",
+        "500000",
+        "--groups",
+        "2"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expectations": {
+        "scan.rows": 6,
+        "scan.complete": true,
+        "row_error_count": 0
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": true,
+        "input": "fixtures\\txt-good.txt",
+        "scan": {
+          "rows": 6,
+          "limit": 0,
+          "complete": true,
+          "scope": "whole_file",
+          "last_scanned_line": 7
+        },
+        "profile": {
+          "channels": 24,
+          "columns": 51,
+          "rate": 500000,
+          "groups": 2,
+          "full_scale_v": "10"
+        },
+        "row_error_count": 0,
+        "errors_first_20": [],
+        "nonincreasing_sample_indices": 0,
+        "limits": [
+          "matches recorder serialization, not analog calibration or ADC timing",
+          "sample_index is reconstructed from packet sequence, not a hardware timestamp",
+          "fixed 51-column layout; different recorder formats require an adapter",
+          "sequence epoch starts at zero for each file, matching current recorder"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "name": "txt-wrap-and-delayed-previous-epoch",
+      "command": [
+        "python",
+        "scripts/check_txt.py",
+        "--input",
+        "fixtures/txt-wrap.txt",
+        "--rate",
+        "1000000",
+        "--groups",
+        "2"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expectations": {
+        "scan.rows": 8,
+        "row_error_count": 0,
+        "nonincreasing_sample_indices": 1
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": true,
+        "input": "fixtures\\txt-wrap.txt",
+        "scan": {
+          "rows": 8,
+          "limit": 0,
+          "complete": true,
+          "scope": "whole_file",
+          "last_scanned_line": 9
+        },
+        "profile": {
+          "channels": 24,
+          "columns": 51,
+          "rate": 1000000,
+          "groups": 2,
+          "full_scale_v": "10"
+        },
+        "row_error_count": 0,
+        "errors_first_20": [],
+        "nonincreasing_sample_indices": 1,
+        "limits": [
+          "matches recorder serialization, not analog calibration or ADC timing",
+          "sample_index is reconstructed from packet sequence, not a hardware timestamp",
+          "fixed 51-column layout; different recorder formats require an adapter",
+          "sequence epoch starts at zero for each file, matching current recorder"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "name": "txt-bad-time-and-voltage",
+      "command": [
+        "python",
+        "scripts/check_txt.py",
+        "--input",
+        "fixtures/txt-bad.txt",
+        "--rate",
+        "500000",
+        "--groups",
+        "2"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expectations": {
+        "row_error_count": 2
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": false,
+        "input": "fixtures\\txt-bad.txt",
+        "scan": {
+          "rows": 6,
+          "limit": 0,
+          "complete": true,
+          "scope": "whole_file",
+          "last_scanned_line": 7
+        },
+        "profile": {
+          "channels": 24,
+          "columns": 51,
+          "rate": 500000,
+          "groups": 2,
+          "full_scale_v": "10"
+        },
+        "row_error_count": 2,
+        "errors_first_20": [
+          {
+            "line": 2,
+            "error": "time_us differs from floor(sample_index * 1000000 / rate)"
+          },
+          {
+            "line": 3,
+            "error": "CH00 voltage inconsistent with code"
+          }
+        ],
+        "nonincreasing_sample_indices": 0,
+        "limits": [
+          "matches recorder serialization, not analog calibration or ADC timing",
+          "sample_index is reconstructed from packet sequence, not a hardware timestamp",
+          "fixed 51-column layout; different recorder formats require an adapter",
+          "sequence epoch starts at zero for each file, matching current recorder"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "name": "txt-prefix-incomplete-group-allowed",
+      "command": [
+        "python",
+        "scripts/check_txt.py",
+        "--input",
+        "fixtures/txt-good.txt",
+        "--rate",
+        "500000",
+        "--groups",
+        "2",
+        "--limit",
+        "3"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expectations": {
+        "scan.complete": false,
+        "scan.scope": "prefix_only",
+        "scan.rows": 3
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": true,
+        "input": "fixtures\\txt-good.txt",
+        "scan": {
+          "rows": 3,
+          "limit": 3,
+          "complete": false,
+          "scope": "prefix_only",
+          "last_scanned_line": 4
+        },
+        "profile": {
+          "channels": 24,
+          "columns": 51,
+          "rate": 500000,
+          "groups": 2,
+          "full_scale_v": "10"
+        },
+        "row_error_count": 0,
+        "errors_first_20": [],
+        "nonincreasing_sample_indices": 0,
+        "limits": [
+          "matches recorder serialization, not analog calibration or ADC timing",
+          "sample_index is reconstructed from packet sequence, not a hardware timestamp",
+          "fixed 51-column layout; different recorder formats require an adapter",
+          "sequence epoch starts at zero for each file, matching current recorder"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "name": "txt-exact-eof",
+      "command": [
+        "python",
+        "scripts/check_txt.py",
+        "--input",
+        "fixtures/txt-good.txt",
+        "--rate",
+        "500000",
+        "--groups",
+        "2",
+        "--limit",
+        "6"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expectations": {
+        "scan.complete": true
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": true,
+        "input": "fixtures\\txt-good.txt",
+        "scan": {
+          "rows": 6,
+          "limit": 6,
+          "complete": true,
+          "scope": "whole_file",
+          "last_scanned_line": 7
+        },
+        "profile": {
+          "channels": 24,
+          "columns": 51,
+          "rate": 500000,
+          "groups": 2,
+          "full_scale_v": "10"
+        },
+        "row_error_count": 0,
+        "errors_first_20": [],
+        "nonincreasing_sample_indices": 0,
+        "limits": [
+          "matches recorder serialization, not analog calibration or ADC timing",
+          "sample_index is reconstructed from packet sequence, not a hardware timestamp",
+          "fixed 51-column layout; different recorder formats require an adapter",
+          "sequence epoch starts at zero for each file, matching current recorder"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "name": "txt-truncated-eof-rejected",
+      "command": [
+        "python",
+        "scripts/check_txt.py",
+        "--input",
+        "fixtures/txt-truncated.txt",
+        "--rate",
+        "500000",
+        "--groups",
+        "2"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expectations": {
+        "row_error_count": 1
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": false,
+        "input": "fixtures\\txt-truncated.txt",
+        "scan": {
+          "rows": 5,
+          "limit": 0,
+          "complete": true,
+          "scope": "whole_file",
+          "last_scanned_line": 6
+        },
+        "profile": {
+          "channels": 24,
+          "columns": 51,
+          "rate": 500000,
+          "groups": 2,
+          "full_scale_v": "10"
+        },
+        "row_error_count": 1,
+        "errors_first_20": [
+          {
+            "line": 6,
+            "error": "EOF in incomplete packet group block"
+          }
+        ],
+        "nonincreasing_sample_indices": 0,
+        "limits": [
+          "matches recorder serialization, not analog calibration or ADC timing",
+          "sample_index is reconstructed from packet sequence, not a hardware timestamp",
+          "fixed 51-column layout; different recorder formats require an adapter",
+          "sequence epoch starts at zero for each file, matching current recorder"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "name": "build-good",
+      "command": [
+        "python",
+        "scripts/check_build.py",
+        "--manifest",
+        "fixtures/build-good.json"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expectations": {
+        "checks.0.ok": true,
+        "checks.1.ok": true
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": true,
+        "build_id": "synthetic-fixture-only",
+        "checks": [
+          {
+            "path": "image-fixture.bin",
+            "kind": "raw_image",
+            "size_bytes": 16,
+            "sha256": "1c7b599d0ec7e61f47b934c8d4d16a220f48df15595d829b28924821b64e07e7",
+            "errors": [],
+            "range": {
+              "start": "0x0",
+              "end_exclusive": "0x10",
+              "partition": "boot"
+            },
+            "ok": true
+          },
+          {
+            "path": "report-fixture.rpt",
+            "kind": "report",
+            "size_bytes": 160,
+            "sha256": "74757f92fddc0accad673382f1dcfa2318c9531d3deceaba4f8ce1dc0d9264cb",
+            "errors": [],
+            "observed_headers": {
+              "Tool Version": "Vivado v.2025.1 (synthetic)",
+              "Design": "fixture_top",
+              "Device": "fixture_device",
+              "Design State": "Routed"
+            },
+            "ok": true
+          }
+        ],
+        "limits": [
+          "manifest expectations must come from the intended release, not the files being checked",
+          "matching hashes/headers do not prove common synthesis provenance or hardware acceptance",
+          "image bounds do not inspect programming erase policy, MCS addressing or A/B record CRC",
+          "positive WNS or Routed alone does not establish complete I/O constraints or zero DRC warnings"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "name": "build-crosses-boot-partition",
+      "command": [
+        "python",
+        "scripts/check_build.py",
+        "--manifest",
+        "fixtures/build-boundary-bad.json"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expectations": {
+        "checks.0.ok": false,
+        "checks.0.errors.0": "raw image outside target partition or empty"
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": false,
+        "build_id": "synthetic-fixture-only",
+        "checks": [
+          {
+            "path": "image-fixture.bin",
+            "kind": "raw_image",
+            "size_bytes": 16,
+            "sha256": "1c7b599d0ec7e61f47b934c8d4d16a220f48df15595d829b28924821b64e07e7",
+            "errors": [
+              "raw image outside target partition or empty"
+            ],
+            "range": {
+              "start": "0x7ffff8",
+              "end_exclusive": "0x800008",
+              "partition": "boot"
+            },
+            "ok": false
+          },
+          {
+            "path": "report-fixture.rpt",
+            "kind": "report",
+            "size_bytes": 160,
+            "sha256": "74757f92fddc0accad673382f1dcfa2318c9531d3deceaba4f8ce1dc0d9264cb",
+            "errors": [],
+            "observed_headers": {
+              "Tool Version": "Vivado v.2025.1 (synthetic)",
+              "Design": "fixture_top",
+              "Device": "fixture_device",
+              "Design State": "Routed"
+            },
+            "ok": true
+          }
+        ],
+        "limits": [
+          "manifest expectations must come from the intended release, not the files being checked",
+          "matching hashes/headers do not prove common synthesis provenance or hardware acceptance",
+          "image bounds do not inspect programming erase policy, MCS addressing or A/B record CRC",
+          "positive WNS or Routed alone does not establish complete I/O constraints or zero DRC warnings"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "name": "build-wrong-tool-version",
+      "command": [
+        "python",
+        "scripts/check_build.py",
+        "--manifest",
+        "fixtures/build-version-bad.json"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expectations": {
+        "checks.1.ok": false,
+        "checks.1.errors.0": "report header mismatch: Tool Version"
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": false,
+        "build_id": "synthetic-fixture-only",
+        "checks": [
+          {
+            "path": "image-fixture.bin",
+            "kind": "raw_image",
+            "size_bytes": 16,
+            "sha256": "1c7b599d0ec7e61f47b934c8d4d16a220f48df15595d829b28924821b64e07e7",
+            "errors": [],
+            "range": {
+              "start": "0x0",
+              "end_exclusive": "0x10",
+              "partition": "boot"
+            },
+            "ok": true
+          },
+          {
+            "path": "report-fixture.rpt",
+            "kind": "report",
+            "size_bytes": 160,
+            "sha256": "74757f92fddc0accad673382f1dcfa2318c9531d3deceaba4f8ce1dc0d9264cb",
+            "errors": [
+              "report header mismatch: Tool Version"
+            ],
+            "observed_headers": {
+              "Tool Version": "Vivado v.2025.1 (synthetic)",
+              "Design": "fixture_top",
+              "Device": "fixture_device",
+              "Design State": "Routed"
+            },
+            "ok": false
+          }
+        ],
+        "limits": [
+          "manifest expectations must come from the intended release, not the files being checked",
+          "matching hashes/headers do not prove common synthesis provenance or hardware acceptance",
+          "image bounds do not inspect programming erase policy, MCS addressing or A/B record CRC",
+          "positive WNS or Routed alone does not establish complete I/O constraints or zero DRC warnings"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "name": "build-wrong-hash",
+      "command": [
+        "python",
+        "scripts/check_build.py",
+        "--manifest",
+        "fixtures/build-hash-bad.json"
+      ],
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expectations": {
+        "checks.0.errors.0": "sha256 mismatch"
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": false,
+        "build_id": "synthetic-fixture-only",
+        "checks": [
+          {
+            "path": "image-fixture.bin",
+            "kind": "raw_image",
+            "size_bytes": 16,
+            "sha256": "1c7b599d0ec7e61f47b934c8d4d16a220f48df15595d829b28924821b64e07e7",
+            "errors": [
+              "sha256 mismatch"
+            ],
+            "range": {
+              "start": "0x0",
+              "end_exclusive": "0x10",
+              "partition": "boot"
+            },
+            "ok": false
+          },
+          {
+            "path": "report-fixture.rpt",
+            "kind": "report",
+            "size_bytes": 160,
+            "sha256": "74757f92fddc0accad673382f1dcfa2318c9531d3deceaba4f8ce1dc0d9264cb",
+            "errors": [],
+            "observed_headers": {
+              "Tool Version": "Vivado v.2025.1 (synthetic)",
+              "Design": "fixture_top",
+              "Device": "fixture_device",
+              "Design State": "Routed"
+            },
+            "ok": true
+          }
+        ],
+        "limits": [
+          "manifest expectations must come from the intended release, not the files being checked",
+          "matching hashes/headers do not prove common synthesis provenance or hardware acceptance",
+          "image bounds do not inspect programming erase policy, MCS addressing or A/B record CRC",
+          "positive WNS or Routed alone does not establish complete I/O constraints or zero DRC warnings"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "name": "udp-missing-input",
+      "command": [
+        "python",
+        "scripts/check_udp.py",
+        "check",
+        "--input",
+        "fixtures/nonexistent.jsonl"
+      ],
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "expectations": {
+        "ok": false
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": false,
+        "error": "[Errno 2] No such file or directory: 'fixtures\\\\nonexistent.jsonl'"
+      },
+      "stderr": ""
+    },
+    {
+      "name": "txt-missing-input",
+      "command": [
+        "python",
+        "scripts/check_txt.py",
+        "--input",
+        "fixtures/nonexistent.txt",
+        "--rate",
+        "500000",
+        "--groups",
+        "2"
+      ],
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "expectations": {
+        "ok": false
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": false,
+        "error": "[Errno 2] No such file or directory: 'fixtures\\\\nonexistent.txt'"
+      },
+      "stderr": ""
+    },
+    {
+      "name": "build-missing-input",
+      "command": [
+        "python",
+        "scripts/check_build.py",
+        "--manifest",
+        "fixtures/nonexistent.json"
+      ],
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "expectations": {
+        "ok": false
+      },
+      "passed": true,
+      "assertion_errors": [],
+      "observed": {
+        "ok": false,
+        "error": "[Errno 2] No such file or directory: 'fixtures\\\\nonexistent.json'"
+      },
+      "stderr": ""
+    }
+  ],
+  "input_and_script_sha256": {
+    "fixtures/build-boundary-bad.json": "59700a30433c29a88b4040d68bb84108bffecf6ad495c6bf927096743577138d",
+    "fixtures/build-good.json": "b3d7f9dbcf64e81535cbcf35e46a6f39ea5ef272c23c7b82f17a5143751ba5c5",
+    "fixtures/build-hash-bad.json": "4ea2cd2920066d12ff19816bb1d04886fbfe918fb3b5accff8c71ea9429ba5a4",
+    "fixtures/build-version-bad.json": "784e54e5dabc8be570714bc01534b196a4afcc48675b10dc713aafdda9807751",
+    "fixtures/image-fixture.bin": "1c7b599d0ec7e61f47b934c8d4d16a220f48df15595d829b28924821b64e07e7",
+    "fixtures/report-fixture.rpt": "74757f92fddc0accad673382f1dcfa2318c9531d3deceaba4f8ce1dc0d9264cb",
+    "fixtures/txt-bad.txt": "9a118d53bb6f9e92af2f074e3dc4e440a17c7a92263179108016380b277560bf",
+    "fixtures/txt-good.txt": "01d839c48e14922c3176093c5958bb58cfcaca2cd08b10941b51be2b2148a24e",
+    "fixtures/txt-truncated.txt": "34a65bc6a30649da659f64852950267538bc48ff71b58c727376851a4290dcc8",
+    "fixtures/txt-wrap.txt": "3a9cfd548ad494205ab03762d83d85dd2f2c848312de008ae0f16b92426fb817",
+    "fixtures/udp-bad.jsonl": "bba576f6b48c0745dc6c06263284b66d7f40be54ae2609b03219489d46fe76da",
+    "fixtures/udp-observation.jsonl": "5b0e9660dde1e6f6a46a3f1ed77fd2fc304683cf87282d3b97482a1c3def8725",
+    "fixtures/udp-recovered.jsonl": "2bad93b1e72c83af57d96b9641357757371a2eb83d0a4a85cb63d5953352a352",
+    "scripts/check_build.py": "fcd3f4a96493d9911e3f1d7d4c4e1d44b4695e826c5cd4f61e6eba9902d7de83",
+    "scripts/check_txt.py": "5e5ec0e9a618e9f12f029182ecad7dd79ff480b70ad875f803ee9460610e3d46",
+    "scripts/check_udp.py": "21d5564504bb33cb21b6a10e1582c13445c6f4eda8a447de5dde3899d007d2b2",
+    "scripts/validate_examples.py": "2677b48f31758d09654fe01caa1fa835f17b857bc0c7bed76084161e9bcdb703"
+  },
+  "limits": [
+    "no real captured UDP/TXT files were provided for these checker runs",
+    "no new FPGA synthesis/implementation, Qt execution, flashing or board test",
+    "fixtures are tiny; performance and large-file duration not benchmarked"
+  ]
+}

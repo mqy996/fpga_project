@@ -1,0 +1,42 @@
+-- The CXX compiler identification is GNU 13.1.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: D:/Qt/Tools/Tools/mingw1310_64/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE  
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/fpga+stm32_project/results/task010/fpga_project/build_output/qt
+[1/25] Automatic MOC and UIC for target protocol_tests
+[2/25] Automatic MOC and UIC for target monitor_math_tests
+[3/25] Building CXX object CMakeFiles/protocol_tests.dir/protocol_tests_autogen/mocs_compilation.cpp.obj
+[4/25] Building CXX object CMakeFiles/monitor_math_tests.dir/monitor_math_tests_autogen/mocs_compilation.cpp.obj
+[5/25] Building CXX object CMakeFiles/monitor_math_tests.dir/tests/monitor_math_tests.cpp.obj
+[6/25] Linking CXX executable monitor_math_tests.exe
+[7/25] Building CXX object CMakeFiles/protocol_tests.dir/tests/protocol_tests.cpp.obj
+[8/25] Automatic MOC and UIC for target controlclient_mock_tests
+[9/25] Automatic MOC and UIC for target QtControlHost_v6
+[10/25] Building CXX object CMakeFiles/protocol_tests.dir/src/protocol.cpp.obj
+[11/25] Linking CXX executable protocol_tests.exe
+[12/25] Building CXX object CMakeFiles/controlclient_mock_tests.dir/tests/controlclient_mock_tests.cpp.obj
+[13/25] Building CXX object CMakeFiles/controlclient_mock_tests.dir/controlclient_mock_tests_autogen/mocs_compilation.cpp.obj
+[14/25] Building CXX object CMakeFiles/controlclient_mock_tests.dir/src/controlclient.cpp.obj
+[15/25] Building CXX object CMakeFiles/controlclient_mock_tests.dir/src/protocol.cpp.obj
+[16/25] Building CXX object CMakeFiles/QtControlHost_v6.dir/src/controlclient.cpp.obj
+[17/25] Building CXX object CMakeFiles/QtControlHost_v6.dir/src/csvrecorder.cpp.obj
+[18/25] Building CXX object CMakeFiles/QtControlHost_v6.dir/src/protocol.cpp.obj
+[19/25] Building CXX object CMakeFiles/QtControlHost_v6.dir/src/main.cpp.obj
+[20/25] Linking CXX executable controlclient_mock_tests.exe
+[21/25] Building CXX object CMakeFiles/QtControlHost_v6.dir/QtControlHost_v6_autogen/mocs_compilation.cpp.obj
+[22/25] Building CXX object CMakeFiles/QtControlHost_v6.dir/src/wavewidget.cpp.obj
+[23/25] Building CXX object CMakeFiles/QtControlHost_v6.dir/src/dataworker.cpp.obj
+[24/25] Building CXX object CMakeFiles/QtControlHost_v6.dir/src/mainwindow.cpp.obj
+[25/25] Linking CXX executable QtControlHost_v6.exe
+PASS: Qt build and all three existing tests: D:\fpga+stm32_project\results\task010\fpga_project\build_output\qt

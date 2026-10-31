@@ -1,0 +1,76 @@
+{
+  "checked_at": "2026-10-31T01:35:10.208617+00:00",
+  "scope": "Independent staged source build, directed simulation and package validation; no board operations.",
+  "tools": {
+    "vivado": "2025.1",
+    "qt": "6.8.3",
+    "mingw": "13.1.0",
+    "cmake": "3.24.2"
+  },
+  "checks": {
+    "adc_pipeline.txt": {
+      "ok": true,
+      "expected_markers": [
+        "PASS: 12 ordered V1..V8 frames at 1 MSPS",
+        "PASS: FRSTDATA mismatch rejected; no sample_valid was published"
+      ],
+      "log": "adc_pipeline.txt"
+    },
+    "create_project.txt": {
+      "ok": true,
+      "expected_markers": [
+        "RTL_SOURCE_COUNT=39"
+      ],
+      "log": "create_project.txt"
+    },
+    "validate_project.txt": {
+      "ok": true,
+      "expected_markers": [
+        "PASS: Vivado 2025.1",
+        "PROJECT_MODE_OPT_HOOK=preserve_frame_ram.tcl"
+      ],
+      "log": "validate_project.txt"
+    },
+    "qt_build.txt": {
+      "ok": true,
+      "expected_markers": [
+        "PASS: Qt build and all three existing tests:"
+      ],
+      "log": "qt_build.txt"
+    }
+  },
+  "qt_existing_tests": {
+    "protocol_tests": "pass",
+    "controlclient_mock_tests": "pass",
+    "monitor_math_tests": "pass"
+  },
+  "skill_synthetic_checks": {
+    "passed": 22,
+    "cases": 22,
+    "hardware_evidence": false
+  },
+  "release_build_checker": "pass",
+  "source_preservation": {
+    "formal_rtl": 39,
+    "qt_cpp_headers": 16,
+    "qt_tests": 3,
+    "byte_identical": true
+  },
+  "portable_original_exe_sha256": "42a3f9889d73a9c2a69eb093ea1ccaf4fd14da9213d955346004fbe020e2a889",
+  "fresh_rebuild_exe_sha256": "0b9db3d38b01f67c27167d6cd95b9fc481e4a54ba84680429f99671baeb22f9f",
+  "rebuild_note": "Freshly linked PE binaries can differ. The distributed EXE is the original final TXT executable; it is not replaced.",
+  "historical_implementation": {
+    "build_date": "2026-10-10",
+    "wns_ns": 0.217,
+    "whs_ns": 0.046,
+    "drc_errors": 0,
+    "drc_warnings": 5,
+    "new_full_implementation": false
+  },
+  "limits": [
+    "No new hardware validation, programming, power-cycle or ADC synchronization measurement.",
+    "Historical full smoke includes runtime_config_manager timeout and is not claimed all-pass.",
+    "Captured test fixture drives one group of eight channels at a time.",
+    "Large TXT evidence covers two 10000-row prefixes only."
+  ]
+}

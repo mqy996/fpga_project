@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-10-22T12:32:34.651505+00:00",
+  "status": "pass",
+  "source_prefixes_checked": 3,
+  "verbatim_excerpts_checked": 37,
+  "engineering_items_checked": 10,
+  "public_roles_only": true,
+  "privacy_pattern_scan": "pass",
+  "errors": [],
+  "limitations": "Verification checks provenance and excerpt integrity only; no new FPGA, host-network or board experiment performed."
+}

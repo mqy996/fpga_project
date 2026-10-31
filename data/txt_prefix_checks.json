@@ -1,0 +1,60 @@
+[
+  {
+    "ok": true,
+    "input": "D:\\fpga+stm32_project\\adc_channels_20261028_163257.txt",
+    "scan": {
+      "rows": 10000,
+      "limit": 10000,
+      "complete": false,
+      "scope": "prefix_only",
+      "last_scanned_line": 10001
+    },
+    "profile": {
+      "channels": 24,
+      "columns": 51,
+      "rate": 500000,
+      "groups": 30,
+      "full_scale_v": "10"
+    },
+    "row_error_count": 0,
+    "errors_first_20": [],
+    "nonincreasing_sample_indices": 0,
+    "limits": [
+      "matches recorder serialization, not analog calibration or ADC timing",
+      "sample_index is reconstructed from packet sequence, not a hardware timestamp",
+      "fixed 51-column layout; different recorder formats require an adapter",
+      "sequence epoch starts at zero for each file, matching current recorder"
+    ],
+    "source_file": "D:\\fpga+stm32_project\\adc_channels_20261028_163257.txt",
+    "source_size_bytes": 849693285
+  },
+  {
+    "ok": true,
+    "input": "D:\\fpga+stm32_project\\adc_channels_20261028_165104.txt",
+    "scan": {
+      "rows": 10000,
+      "limit": 10000,
+      "complete": false,
+      "scope": "prefix_only",
+      "last_scanned_line": 10001
+    },
+    "profile": {
+      "channels": 24,
+      "columns": 51,
+      "rate": 500000,
+      "groups": 30,
+      "full_scale_v": "10"
+    },
+    "row_error_count": 0,
+    "errors_first_20": [],
+    "nonincreasing_sample_indices": 0,
+    "limits": [
+      "matches recorder serialization, not analog calibration or ADC timing",
+      "sample_index is reconstructed from packet sequence, not a hardware timestamp",
+      "fixed 51-column layout; different recorder formats require an adapter",
+      "sequence epoch starts at zero for each file, matching current recorder"
+    ],
+    "source_file": "D:\\fpga+stm32_project\\adc_channels_20261028_165104.txt",
+    "source_size_bytes": 424115121
+  }
+]
